@@ -18,7 +18,7 @@ export default function LoginPage() {
           Sign in
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Enter your email and we'll send you a magic link to sign in
+          {"Enter your email and we'll send you a magic link to sign in"}
         </p>
       </div>
 

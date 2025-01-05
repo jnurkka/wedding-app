@@ -21,12 +21,12 @@ export default function CheckEmailPage() {
             Check Your Email
           </h2>
           <p className="text-gray-600 mb-6">
-            We've sent a magic link to your email address.
-            Click the link to sign in to your account.
+            {`We've sent a magic link to your email address.
+            Click the link to sign in to your account.`}
           </p>
           <p className="text-sm text-gray-500">
-            The link will expire in 1 hour.
-            If you don't see the email, check your spam folder.
+            {`The link will expire in 1 hour.
+            If you don't see the email, check your spam folder.`}
           </p>
         </div>
       </div>
