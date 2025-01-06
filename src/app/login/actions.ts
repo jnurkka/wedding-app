@@ -1,7 +1,5 @@
 'use server'
 
-import { redirect } from 'next/navigation'
-
 import { createClient } from '@/utils/supabase/server'
 
 interface SuccessResonse {
@@ -15,10 +13,8 @@ interface ErrorResponse {
 
 type Response = SuccessResonse | ErrorResponse;
 
-export async function sendMagicLink(formData: FormData): Promise<Response> {
+export async function submit(email: string): Promise<Response> {
   const supabase = await createClient()
-
-  const email = formData.get('email') as string
 
   const { error } = await supabase.auth.signInWithOtp({
     email,
@@ -38,14 +34,5 @@ export async function sendMagicLink(formData: FormData): Promise<Response> {
 
   return {
     status: 'success',
-  }
-}
-
-export const submit = async (formData: FormData): Promise<void | string> => {
-  const response = await sendMagicLink(formData)
-  if (response.status === 'success') {
-    redirect('/login/check-email')
-  } else {
-    return response.error
   }
 }
