@@ -29,5 +29,5 @@ export const CheckEmailComponent = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
