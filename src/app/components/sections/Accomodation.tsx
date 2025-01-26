@@ -6,15 +6,19 @@ import { SectionTitle } from "../SectionTitle";
 export const Accommodation = () => {
   return (
     <SectionContainer bgImage="/hotel-interior.jpg" bgColor="white">
-    <SectionTitle value="Accommodation" color="white" />
-    <Card>
-      <CardTitle value="Acker Hotel" />
+      <SectionTitle value="Accommodation" color="white" />
+      <Card>
+        <CardTitle value="Acker Hotel" />
         <div className="space-y-4 text-[#4A4238]">
           <p>
-            We have reserved a contingency in the hotel right next to the party location for a nightly rate of <strong>144€ for two people in the standard room</strong>, including breakfast buffet.
+            We have reserved a contingency in the hotel right next to the party
+            location for a nightly rate of{" "}
+            <strong>144€ for two people in the standard room</strong>, including
+            breakfast buffet.
           </p>
           <p>
-            You can <strong>cancel your booking for free</strong> until 2 weeks before the wedding in case you can't make it.
+            You can <strong>cancel your booking for free</strong> until 2 weeks
+            before the wedding in case you can't make it.
           </p>
           <div className="flex justify-center space-x-4 mt-6">
             <a
@@ -25,10 +29,18 @@ export const Accommodation = () => {
             </a>
           </div>
           <p className="text-sm">
-            You can also contact the hotel directly via telephone: <a href="tel:+49 8431 90766 0" className="text-[#4A4238] hover:underline">+49 8431 90766 0</a>
+            You can also contact the hotel directly via telephone:{" "}
+            <a
+              href="tel:+49 8431 90766 0"
+              className="text-[#4A4238] hover:underline"
+            >
+              +49 8431 90766 0
+            </a>
           </p>
           <p className="text-xs mt-6">
-            You are free to choose an alternative accommodation if you'd like. Please let us know if you don't need a room in the hotel, so that we can inform them about our reduced need for the contingency.
+            You are free to choose an alternative accommodation if you'd like.
+            Please let us know if you don't need a room in the hotel, so that we
+            can inform them about our reduced need for the contingency.
           </p>
         </div>
       </Card>

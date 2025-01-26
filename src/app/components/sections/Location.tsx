@@ -23,7 +23,9 @@ export const Location = () => (
       <div className="text-[#4A4238] text-base space-y-2 mb-4">
         <p>
           Wedding ceremony, party location (both Friday and Saturday) and
-          accomondation for everyone in one place. One minute walking distance between hotel and party location.</p>
+          accomondation for everyone in one place. One minute walking distance
+          between hotel and party location.
+        </p>
         <p>
           <Link
             href="https://maps.app.goo.gl/6yNbatiLMjMrRTQ57"

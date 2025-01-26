@@ -6,9 +6,9 @@ import { SaveTheDate } from "./pages";
 export default async function PrivatePage() {
   const supabase = await createClient();
 
-  const { data, error } = await supabase.auth.getUser()
+  const { data, error } = await supabase.auth.getUser();
   if (error || !data?.user) {
-    redirect('/login')
+    redirect("/login");
   }
 
   return <SaveTheDate />;

@@ -1,8 +1,10 @@
-export const CardContainer: React.FC<{ children: React.ReactNode; cols: number }> = ({
-  children,
-  cols
-}) => (
-  <div className={`grid grid-cols-1 md:grid-cols-${cols} gap-8 w-full max-w-7xl md:max-h-none`}>
+export const CardContainer: React.FC<{
+  children: React.ReactNode;
+  cols: number;
+}> = ({ children, cols }) => (
+  <div
+    className={`grid grid-cols-1 md:grid-cols-${cols} gap-8 w-full max-w-7xl md:max-h-none`}
+  >
     {children}
   </div>
 );

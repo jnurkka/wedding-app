@@ -32,8 +32,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)"></meta>
-        <meta name="theme-color" content="#161b22" media="(prefers-color-scheme: dark)"></meta>
+        <meta
+          name="theme-color"
+          content="#f6f8fa"
+          media="(prefers-color-scheme: light)"
+        ></meta>
+        <meta
+          name="theme-color"
+          content="#161b22"
+          media="(prefers-color-scheme: dark)"
+        ></meta>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${greatVibes.variable}`}
