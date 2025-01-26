@@ -6,7 +6,7 @@ export const SaveTheDate = () => {
   const programSections = [
     {
       day: 'Friday',
-      date: '04.10.2025',
+      date: '19.09.2025',
       fullDate: 'Friday, September 19th',
       events: [
         { time: '15:00', description: 'Check-in Hotel' },
@@ -15,7 +15,7 @@ export const SaveTheDate = () => {
     },
     {
       day: 'Saturday',
-      date: '05.10.2025',
+      date: '20.09.2025',
       fullDate: 'Saturday, September 20th',
       events: [
         { time: '13:00', description: 'Wedding Ceremony' },
@@ -24,7 +24,7 @@ export const SaveTheDate = () => {
     },
     {
       day: 'Sunday',
-      date: '06.10.2025',
+      date: '21.09.2025',
       fullDate: 'Sunday, September 21st',
       events: [
         { time: '09:00', description: 'Brunch' },
