@@ -5,27 +5,28 @@ export const SaveTheDate = () => {
     {
       day: 'Friday',
       date: '04.10.2025',
+      fullDate: 'Friday, September 19th',
       events: [
-        { time: '18:00', description: 'Welcome Dinner' },
-        { time: '20:00', description: 'Evening Gathering' }
+        { time: '15:00', description: 'Check-in Hotel' },
+        { time: '18:00', description: 'Oktoberfest Party' }
       ]
     },
     {
       day: 'Saturday',
       date: '05.10.2025',
+      fullDate: 'Saturday, September 20th',
       events: [
-        { time: '14:00', description: 'Wedding Ceremony' },
-        { time: '16:00', description: 'Cocktail Hour' },
-        { time: '18:00', description: 'Wedding Reception & Dinner' },
-        { time: '22:00', description: 'Party & Dancing' }
+        { time: '13:00', description: 'Wedding Ceremony' },
+        { time: '02:00', description: 'Afterparty' },
       ]
     },
     {
       day: 'Sunday',
       date: '06.10.2025',
+      fullDate: 'Sunday, September 21st',
       events: [
-        { time: '11:00', description: 'Farewell Brunch' },
-        { time: '14:00', description: 'Goodbyes' }
+        { time: '09:00', description: 'Brunch' },
+        { time: '11:00', description: 'Check-out Hotel' }
       ]
     }
   ];
@@ -39,11 +40,11 @@ export const SaveTheDate = () => {
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-          <h1 className="font-['Great_Vibes'] text-8xl mb-4 text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
+          <h1 className="font-['Great_Vibes'] text-8xl mb-4 text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)] max-sm:text-5xl">
             Jasmin & Jaakko
           </h1>
           <div className="w-32 border-t-2 border-white mb-4"></div>
-          <p className="font-['Great_Vibes'] text-6xl text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
+          <p className="font-['Great_Vibes'] text-6xl text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)] max-sm:text-4xl">
             04.10.2025
           </p>
         </div>
@@ -51,29 +52,28 @@ export const SaveTheDate = () => {
 
       {/* Program Section */}
       <div
-        className="relative h-screen w-screen bg-[#E6D2C3] flex flex-col justify-center items-center snap-start"
+        className="relative min-h-screen w-screen bg-[#E6D2C3] flex flex-col justify-start md:justify-center items-center snap-start px-6 md:px-12 lg:px-16 pt-20 md:pt-0 pb-8 pt-8"
       >
-        <div className="text-center mb-8">
-          <h2 className="text-5xl font-['Great_Vibes'] text-[#4A4238] mb-4">
-            Wedding Weekend Program
+        <div className="text-center mb-8 mt-2">
+          <h2 className="text-5xl font-['Great_Vibes'] text-[#4A4238] max-sm:text-3xl">
+            Weekend Program
           </h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 px-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl md:max-h-none">
           {programSections.map((section, index) => (
             <div
               key={index}
-              className="bg-white/70 p-6 rounded-xl shadow-lg text-center"
+              className="bg-white/70 p-4 rounded-xl shadow-lg text-center min-w-[250px] w-full"
             >
-              <h3 className="text-3xl font-['Great_Vibes'] text-[#4A4238] mb-2">
-                {section.day}
+              <h3 className="text-3xl font-['Great_Vibes'] text-[#4A4238] mb-2 max-sm:text-2xl">
+                {section.fullDate}
               </h3>
-              <p className="text-xl text-[#4A4238] mb-4">{section.date}</p>
               <ul>
                 {section.events.map((event, eventIndex) => (
                   <li
                     key={eventIndex}
-                    className="mb-2 text-[#4A4238]"
+                    className="mb-2 text-[#4A4238] max-sm:text-base"
                   >
                     <span className="font-bold">{event.time}</span> - {event.description}
                   </li>
