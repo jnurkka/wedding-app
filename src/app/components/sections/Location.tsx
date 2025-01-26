@@ -16,9 +16,7 @@ export const Location = () => (
           target="_blank"
           className="text-[#4A4238] text-lg hover:underline flex items-center"
         >
-          Am Machinenring
-          <br />
-          86633, Neuburg an der Donau
+          Am Machinenring, 86633 Neuburg an der Donau
           <FaExternalLinkAlt className="ml-2 text-sm" />
         </Link>
       </div>
