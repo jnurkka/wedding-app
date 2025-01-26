@@ -6,7 +6,7 @@ export const Landing: React.FC<{ start: string; end: string }> = ({
 }) => (
   <div
     className="relative h-screen w-screen bg-cover bg-bottom snap-start max-sm:bg-[position:40%_center]"
-    style={{ backgroundImage: "url('/jjs.jpeg')" }}
+    style={{ backgroundImage: "url('/jjs.webp')" }}
   >
     <Overlay />
     <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
