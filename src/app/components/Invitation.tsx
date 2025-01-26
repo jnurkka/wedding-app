@@ -52,9 +52,9 @@ export const SaveTheDate = () => {
 
       {/* Program Section */}
       <div
-        className="relative min-h-screen w-screen bg-[#E6D2C3] flex flex-col justify-start md:justify-center items-center snap-start px-6 md:px-12 lg:px-16 pt-20 md:pt-0 pb-8 pt-8"
+        className="relative min-h-screen w-screen bg-[#E6D2C3] flex flex-col justify-start md:justify-center items-center snap-start px-6 md:px-12 lg:px-16 py-8"
       >
-        <div className="text-center mb-8 mt-2">
+        <div className="text-center mb-12 max-md:mb-4">
           <h2 className="text-5xl font-['Great_Vibes'] text-[#4A4238] max-sm:text-3xl">
             Weekend Program
           </h2>
@@ -64,7 +64,7 @@ export const SaveTheDate = () => {
           {programSections.map((section, index) => (
             <div
               key={index}
-              className="bg-white/70 p-4 rounded-xl shadow-lg text-center min-w-[250px] w-full"
+              className="bg-white/70 p-12 rounded-xl shadow-lg text-center min-w-[250px] w-full"
             >
               <h3 className="text-3xl font-['Great_Vibes'] text-[#4A4238] mb-2 max-sm:text-2xl">
                 {section.fullDate}
