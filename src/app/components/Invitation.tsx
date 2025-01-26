@@ -47,7 +47,7 @@ export const SaveTheDate = () => {
           </h1>
           <div className="w-32 border-t-2 border-white mb-4"></div>
           <p className="font-['Great_Vibes'] text-6xl text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)] max-sm:text-4xl">
-            04.10.2025
+            { `${ programSections[0].date} - ${programSections[2].date}` }
           </p>
         </div>
       </div>
