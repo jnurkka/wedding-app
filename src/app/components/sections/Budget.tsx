@@ -23,7 +23,7 @@ export const Budget = () => {
               Saturday: All food and drinks are on us
               <br />
               <br />
-              Please don't feel obliged to spend even more money on a present,
+              Please don&apos;t feel obliged to spend even more money on a present,
               you coming to celebrate with us is more than we could ask for! 🫶
             </p>
           </div>

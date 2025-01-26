@@ -12,13 +12,12 @@ export const Accommodation = () => {
         <div className="space-y-4 text-[#4A4238]">
           <p>
             We have reserved a contingency in the hotel right next to the party
-            location for a nightly rate of{" "}
-            <strong>144€ for two people in the standard room</strong>, including
-            breakfast buffet.
+            location for a nightly rate of <strong> 144€ for two people in the standard room</strong>, including
+            breakfast.
           </p>
           <p>
             You can <strong>cancel your booking for free</strong> until 2 weeks
-            before the wedding in case you can't make it.
+            before the wedding in case you can&apos;t make it.
           </p>
           <div className="flex justify-center space-x-4 mt-6">
             <a
@@ -38,8 +37,8 @@ export const Accommodation = () => {
             </a>
           </p>
           <p className="text-xs mt-6">
-            You are free to choose an alternative accommodation if you'd like.
-            Please let us know if you don't need a room in the hotel, so that we
+            You are free to choose an alternative accommodation if you&apos;d like.
+            Please let us know if you don&apos;t need a room in the hotel, so that we
             can inform them about our reduced need for the contingency.
           </p>
         </div>
