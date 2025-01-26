@@ -1,13 +1,20 @@
 export const CardContainer: React.FC<{
   children: React.ReactNode;
   cols: number;
-}> = ({ children, cols }) => (
-  <div
-    className={`grid grid-cols-1 md:grid-cols-${cols} gap-8 w-full max-w-7xl md:max-h-none`}
-  >
-    {children}
-  </div>
-);
+}> = ({ children, cols }) => {
+  const colClasses = {
+    2: 'md:grid-cols-2',
+    3: 'md:grid-cols-3',
+  }[cols] || 'md:grid-cols-1';
+
+  return (
+    <div
+      className={`grid grid-cols-1 ${colClasses} gap-8 w-full max-w-7xl md:max-h-none`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div className="bg-white/80 z-10 p-8 rounded-xl shadow-lg text-center min-w-[250px] w-full max-w-2xl">
