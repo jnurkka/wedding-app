@@ -5,7 +5,7 @@ export const Landing: React.FC<{ start: string; end: string }> = ({
   end,
 }) => (
   <div
-    className="relative h-screen w-screen bg-cover bg-center snap-start max-sm:bg-[position:40%_center]"
+    className="relative h-screen w-screen bg-cover bg-bottom snap-start max-sm:bg-[position:40%_center]"
     style={{ backgroundImage: "url('/jjs.jpeg')" }}
   >
     <Overlay />
