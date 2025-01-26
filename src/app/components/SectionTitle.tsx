@@ -4,7 +4,7 @@ export const SectionTitle: React.FC<{ value: string; color?: string }> = ({
 }) => (
   <div className="text-center mb-8 mt-2 z-10">
     <h2
-      className="text-5xl font-['Great_Vibes'] text-[#4A4238] max-sm:text-3xl"
+      className="text-5xl font-['Great_Vibes'] text-[#4A4238] max-sm:text-4xl"
       style={{ color: color ? color : "#4A4238" }}
     >
       {value}

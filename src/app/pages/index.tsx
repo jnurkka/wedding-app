@@ -8,7 +8,7 @@ import { TravelInfo } from "../components/sections/TravelInfo";
 export const SaveTheDate = () => {
   return (
     <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
-      <Landing start="19.09.2025" end="21.09.2025" />
+      <Landing start="19.09." end="21.09.2025" />
       <Program />
       <Location />
       <Accommodation />

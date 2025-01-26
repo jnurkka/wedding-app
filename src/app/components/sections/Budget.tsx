@@ -12,13 +12,13 @@ export const Budget = () => {
           <CardTitle value="Important Considerations" />
           <div className="space-y-4 text-[#4A4238]">
             <p>
-              We understand that showing up itself represents a significant financial investment for most of you. We wanted to have a full-weekend celebration to make the long travel worth it, and want to be fully transparent about the expected costs to avoid any surprises. We also negotiated special rates for the accommodation to keep your costs down.
+              We understand that showing up itself represents a significant financial investment for most of you. We wanted to have a full-weekend celebration to make the long travel worth it, and want to be fully transparent about the expected costs for you.
             </p>
             <p>
               Friday: Guests pay for their own food and drinks<br/>
               Saturday: All food and drinks are on us<br/>
               <br/>
-              Please don't feel obliged to spend even more money on a present, you coming to celebrate with us is more than we could ask for!
+              Please don't feel obliged to spend even more money on a present, you coming to celebrate with us is more than we could ask for! 🫶
             </p>
           </div>
         </Card>

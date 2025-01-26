@@ -17,7 +17,7 @@ const programSections = [
     date: "20.09.2025",
     fullDate: "Saturday, September 20th",
     events: [
-      { time: "13:00", description: "Wedding Ceremony" },
+      { time: "13:30", description: "Wedding Ceremony" },
       { time: "02:00", description: "Lights out" },
     ],
   },

@@ -6,6 +6,21 @@ import { Card, CardContainer, CardTitle } from "../Card";
 
 const travelOptions = [
   {
+    origin: "Bielefeld",
+    methods: [
+      {
+        icon: <FaTrain className="text-[#4A4238] mr-2" />,
+        description: "Bielefeld to Neuburg (ca. 6-7h)",
+        link: "https://maps.app.goo.gl/xhzMtynWqJrVGpW89",
+      },
+      {
+        icon: <FaCar className="text-[#4A4238] mr-2" />,
+        description: "Bielefeld to Neuburg (ca. 5,5h)",
+        link: "https://maps.app.goo.gl/qfbRgyVoiKLH1vxMA",
+      },
+    ],
+  },
+  {
     origin: "Finland",
     methods: [
       {
@@ -37,21 +52,6 @@ const travelOptions = [
         icon: <FaCar className="text-[#4A4238] mr-2" />,
         description: "München to Neuburg (ca. 1h)",
         link: "https://maps.app.goo.gl/Ui5RGtTE5cgHsnv49",
-      },
-    ],
-  },
-  {
-    origin: "Bielefeld",
-    methods: [
-      {
-        icon: <FaTrain className="text-[#4A4238] mr-2" />,
-        description: "Bielefeld to Neuburg (ca. 6-7h)",
-        link: "https://maps.app.goo.gl/xhzMtynWqJrVGpW89",
-      },
-      {
-        icon: <FaCar className="text-[#4A4238] mr-2" />,
-        description: "Bielefeld to Neuburg (ca. 5,5h)",
-        link: "https://maps.app.goo.gl/qfbRgyVoiKLH1vxMA",
       },
     ],
   },
