@@ -1,3 +1,5 @@
+import { Overlay } from "./Overlay";
+
 export const SectionContainer: React.FC<{
   children: React.ReactNode;
   bgColor: string;
@@ -16,6 +18,7 @@ export const SectionContainer: React.FC<{
   };
   return (
     <div className={className} style={style}>
+      {bgImage && <Overlay />}
       {children}
     </div>
   );

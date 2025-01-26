@@ -33,7 +33,7 @@ const programSections = [
 ];
 
 export const Program = () => (
-  <SectionContainer bgColor="#6C808C">
+  <SectionContainer bgColor="#6C808C" bgImage="/acker-alm.jpg">
     <SectionTitle value="Program Highlights" color="white" />
     <CardContainer cols={3}>
       {programSections.map((section, index) => (

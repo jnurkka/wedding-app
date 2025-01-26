@@ -2,12 +2,10 @@ import React from "react";
 import { SectionContainer } from "../SectionContainer";
 import { Card, CardTitle } from "../Card";
 import { SectionTitle } from "../SectionTitle";
-import { Overlay } from "../Overlay";
 
 export const Accommodation = () => {
   return (
     <SectionContainer bgImage="/hotel-interior.jpg" bgColor="white">
-    <Overlay />
     <SectionTitle value="Accommodation" color="white" />
     <Card>
       <CardTitle value="Acker Hotel" />

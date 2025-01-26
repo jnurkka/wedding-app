@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import { SectionContainer } from "../SectionContainer";
-import { Overlay } from "../Overlay";
 import { SectionTitle } from "../SectionTitle";
 import { Card, CardTitle } from "../Card";
 
 export const Location = () => (
-  <SectionContainer bgImage="/acker-alm.jpg" bgColor="white">
-    <Overlay />
+  <SectionContainer bgImage="/hotel.webp" bgColor="white">
     <SectionTitle value="Location" color="white" />
     <Card>
       <CardTitle value="Acker Alm & Hotel" />
