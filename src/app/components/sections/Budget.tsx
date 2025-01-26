@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContainer } from "../Card";
+import { Card, CardContainer, CardTitle } from "../Card";
 import { FaCalculator, FaEuroSign } from "react-icons/fa";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
@@ -10,10 +10,7 @@ export const Budget = () => {
       <SectionTitle value="Budget" color="#4A4238" />
       <CardContainer cols={2}>
         <Card>
-          <div className="flex items-center mb-4">
-            <FaCalculator className="mr-4 text-2xl text-[#4A4238]" />
-            <h3 className="text-2xl font-bold text-[#4A4238]">Important Considerations</h3>
-          </div>
+          <CardTitle value="Important Considerations" />
           <div className="space-y-4 text-[#4A4238]">
             <p>
               We understand that showing up itself represents a significant financial investment for most of you. We wanted to have a full-weekend celebration to make the long travel worth it, and want to be fully transparent about the expected costs to avoid any surprises.
@@ -28,11 +25,8 @@ export const Budget = () => {
         </Card>
 
         <Card>
-          <div className="flex items-center mb-4">
-            <FaEuroSign className="mr-4 text-2xl text-[#4A4238]" />
-            <h3 className="text-2xl font-bold text-[#4A4238]">Cost Estimate (2 persons from Finland)</h3>
-          </div>
-          <div className="space-y-4">
+          <CardTitle value="Cost Estimate (2 persons from Finland)" />
+          <div className="space-y-4 text-[#4A4238]">
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="font-semibold">Accommodation</p>
@@ -65,7 +59,7 @@ export const Budget = () => {
                 <p className="font-bold">Total Estimated Cost</p>
               </div>
               <div className="text-right">
-                <p className="text-2xl font-bold text-[#4A4238]">€1,016</p>
+                <p className="text-2xl font-bold">€1,016</p>
               </div>
             </div>
           </div>
