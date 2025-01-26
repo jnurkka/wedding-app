@@ -28,7 +28,7 @@ export const Accommodation = () => {
             You can also contact the hotel directly via telephone: <a href="tel:+49 8431 90766 0" className="text-[#4A4238] hover:underline">+49 8431 90766 0</a>
           </p>
           <p className="text-xs mt-6">
-            You are free to choose an alternative accommodation if you'd like. Please let us know if you do, so that we can inform the hotel about our reduced need for the contingency.
+            You are free to choose an alternative accommodation if you'd like. Please let us know if you don't need a room in the hotel, so that we can inform them about our reduced need for the contingency.
           </p>
         </div>
       </Card>
