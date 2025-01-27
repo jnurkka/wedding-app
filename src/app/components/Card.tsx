@@ -2,10 +2,11 @@ export const CardContainer: React.FC<{
   children: React.ReactNode;
   cols: number;
 }> = ({ children, cols }) => {
-  const colClasses = {
-    2: 'md:grid-cols-2',
-    3: 'md:grid-cols-3',
-  }[cols] || 'md:grid-cols-1';
+  const colClasses =
+    {
+      2: "md:grid-cols-2",
+      3: "md:grid-cols-3",
+    }[cols] || "md:grid-cols-1";
 
   return (
     <div
