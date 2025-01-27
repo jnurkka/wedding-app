@@ -3,6 +3,7 @@ import { Budget } from "../components/sections/Budget";
 import { Landing } from "../components/sections/Landing";
 import { Location } from "../components/sections/Location";
 import { Program } from "../components/sections/Program";
+import { Response } from "../components/sections/Response";
 import { TravelInfo } from "../components/sections/TravelInfo";
 
 export const SaveTheDate = () => {
@@ -14,6 +15,7 @@ export const SaveTheDate = () => {
       <Accommodation />
       <TravelInfo />
       <Budget />
+      <Response />
     </div>
   );
 };
