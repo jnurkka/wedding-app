@@ -20,15 +20,15 @@ export const Response = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const data = new FormData(e.target);
+    const data = new FormData(e.target as HTMLFormElement);
 
     setIsSubmitting(true);
     setSubmitMessage("");
 
     try {
       const status = await submitRegistration({
-        people_sat: parseInt(data.get("people_sat") || "0", 10),
-        people_fr: parseInt(data.get("people_fr") || "0", 10),
+        people_sat: parseInt(data.get("people_sat") as string || "0", 10),
+        people_fr: parseInt(data.get("people_fr") as string || "0", 10),
         staying_sat: data.get("staying_sat") === "on",
         staying_fr: data.get("staying_fr") === "on",
         name: data.get("respondentName") as string,
