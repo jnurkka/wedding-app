@@ -10,9 +10,11 @@ import { Registration } from "../data";
 export const SaveTheDate = ({
   registration,
   submitRegistration,
+  email,
 }: {
   registration: Registration | null;
   submitRegistration: (registration: Registration) => Promise<string>;
+  email: string;
 }) => {
   return (
     <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
@@ -25,6 +27,7 @@ export const SaveTheDate = ({
       <Response
         registration={registration}
         submitRegistration={submitRegistration}
+        email={email}
       />
     </div>
   );

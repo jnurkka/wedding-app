@@ -1,7 +1,9 @@
 export interface Registration {
-  staying: boolean;
+  staying_sat: boolean;
   staying_fr: boolean;
-  people: number;
-  joining: boolean;
-  joining_fr: boolean;
+  people_sat: number;
+  people_fr: number;
+  name: string;
+  diet: string;
+  comment: string;
 }

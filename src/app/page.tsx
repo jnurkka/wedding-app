@@ -2,14 +2,9 @@ import { redirect } from "next/navigation";
 
 import { createClient } from "@/utils/supabase/server";
 import { SaveTheDate } from "./pages";
+import { Registration } from "./data";
 
-async function submitRegistration(registration: {
-  joining: boolean;
-  joining_fr: boolean;
-  people: number;
-  staying: boolean;
-  staying_fr: boolean;
-}) {
+async function submitRegistration(registration: Registration) {
   "use server"; // mark function as a server action (fixes the error)
   const supabase = await createClient();
   const {
@@ -65,6 +60,7 @@ export default async function PrivatePage() {
     <SaveTheDate
       registration={registration}
       submitRegistration={submitRegistration}
+      email={userData.user.email!}
     />
   );
 }
