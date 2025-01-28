@@ -36,7 +36,7 @@ export const Response = ({
         comment: data.get("comment") as string,
       });
       console.log("Status:", status);
-      setSubmitMessage("Your response has been saved successfully!");
+      setSubmitMessage("Your response has been saved successfully! You can come back here to update it anytime.");
     } catch (error) {
       console.error("Error submitting registration:", error);
       setSubmitMessage("An error occurred. Please try again.");
@@ -54,21 +54,14 @@ export const Response = ({
       }
     >
       <SectionContainer bgColor="#E6D2C3">
-        <SectionTitle value="RSVP" color="black" />
+        <SectionTitle value="RSVP" />
         <Card>
           <CardTitle value="Your personal response" />
           <form onSubmit={handleSubmit} className="space-y-6 p-6">
-              <h3 className="text-xl font-bold text-[#4A4238] mb-4 text-center">
-                Your attendance
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <span className="block text-[#4A4238] text-sm mb-2 text-center md:text-left">
+          <span className="block text-[#4A4238] text-sm mb-2 text-center md:text-left">
                     Your email: {email}
                   </span>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div className="grid grid-cols-1 gap-4">
                 <label className="block text-[#4A4238]">
                   <span className="block mb-2 font-semibold">Your name</span>
                   <input
@@ -84,29 +77,26 @@ export const Response = ({
                   <span className="block mb-2 font-semibold">No of people (Friday)</span>
                   <input
                     type="number"
-                    min="1"
+                    min="0"
                     max="5"
                     name="people_fr"
-                      defaultValue={registration?.people_fr}
-                      className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all"
-                    />
+                    defaultValue={registration?.people_fr}
+                    className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all"
+                    placeholder="How many will you be on Friday?"
+                  />
                   </label>
                   <label className="block text-[#4A4238]">
                     <span className="block mb-2 font-semibold">No of people (Saturday)</span>
                     <input
                       type="number"
-                      min="1"
+                      min="0"
                       max="5"
                       name="people_sat"
                       defaultValue={registration?.people_sat}
                       className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all"
+                      placeholder="How many will you be on Saturday?"
                     />
                   </label>
-              </div>
-              <h3 className="text-xl font-bold text-[#4A4238] mb-4 text-center">
-                Hotel Accommodation
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <label className="flex items-center space-x-3 cursor-pointer group">
                   <input
                     type="checkbox"
@@ -130,6 +120,26 @@ export const Response = ({
                   </span>
                 </label>
               </div>
+                <label className="block text-[#4A4238]">
+                  <span className="block mb-2 font-semibold">Dietary Restrictions</span>
+                  <textarea
+                    name="diet"
+                    rows={2}
+                    defaultValue={registration?.diet || ""}
+                    className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all"
+                    placeholder="Dietary restrictions (allergies, intolerances, diets)"
+                  />
+                </label>
+                <label className="block text-[#4A4238]">
+                  <span className="block mb-2 font-semibold">Additional Comments</span>
+                  <textarea
+                    name="comment"
+                    defaultValue={registration?.comment || ""}
+                    rows={3}
+                    className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all resize-y"
+                    placeholder="Leave any comments or requests here"
+                  />
+                </label>
 
               <div className="text-center">
                 <button
