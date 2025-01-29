@@ -3,35 +3,35 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
 import { Card, CardContainer, CardTitle } from "../Card";
+import { Dictionary } from "@/app/[lang]/types";
 
 const travelOptions = [
   {
     origin: "Bielefeld",
     methods: [
       {
-        description: "🚂 Bielefeld to Neuburg (ca. 6-7h)",
+        description: "🚂 Bielefeld -> Neuburg (ca. 6-7h)",
         link: "https://maps.app.goo.gl/xhzMtynWqJrVGpW89",
       },
       {
-        description: "🚗 Bielefeld to Neuburg (ca. 5,5h)",
+        description: "oder 🚗 Bielefeld -> Neuburg (ca. 5,5h)",
         link: "https://maps.app.goo.gl/qfbRgyVoiKLH1vxMA",
       },
     ],
   },
   {
-    origin: "Finland",
+    origin: "Suomi",
     methods: [
       {
-        description: "✈️ HKI to MUC (2,5h)",
+        description: "✈️ HKI -> MUC (2,5h)",
         link: "https://www.google.com/travel/flights/s/6Hxh57QEeQEJfaTU6",
       },
       {
-        description: "🚂 MUC to Neuburg (ca. 1,5h)",
+        description: "🚂 MUC -> Neuburg (ca. 1,5h)",
         link: "https://maps.app.goo.gl/9YiMe5BNR8eTEdGw7",
       },
       {
-        icon: '',
-        description: "🚗 MUC to Neuburg (50min)",
+        description: "tai 🚗 MUC -> Neuburg (50min)",
         link: "https://maps.app.goo.gl/Ui5RGtTE5cgHsnv49",
       },
     ],
@@ -40,20 +40,20 @@ const travelOptions = [
     origin: "München",
     methods: [
       {
-        description: "🚂 München to Neuburg (ca. 1,5h)",
+        description: "🚂 München -> Neuburg (ca. 1,5h)",
         link: "https://maps.app.goo.gl/1hGFLBeLyw2tLVWG7",
       },
       {
-        description: "🚗 München to Neuburg (ca. 1h)",
+        description: "or 🚗 München -> Neuburg (ca. 1h)",
         link: "https://maps.app.goo.gl/Ui5RGtTE5cgHsnv49",
       },
     ],
   },
 ];
 
-export const TravelInfo = () => (
+export const TravelInfo = ({dict}: {dict: Dictionary}) => (
   <SectionContainer id="travel-info" bgColor="#E6D2C3">
-    <SectionTitle value="How to Get There" />
+    <SectionTitle value={dict.travelInfo.title} />
     <CardContainer cols={3}>
       {travelOptions.map((travelOption, index) => (
         <Card key={index}>

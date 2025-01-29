@@ -1,0 +1,57 @@
+{
+  "weekdays": {
+    "Friday": "Friday, September 19th",
+    "Saturday": "Saturday, September 20th",
+    "Sunday": "Sunday, September 21st"
+  },
+  "program": {
+    "title": "Program Highlights",
+    "checkin": "Check-in Hotel",
+    "party": "Oktoberfest Party",
+    "wedding": "Wedding Ceremony",
+    "lightsout": "Lights out",
+    "brunch": "Brunch",
+    "checkout": "Check-out Hotel"
+  },
+  "location": {
+    "title": "Location",
+    "description": "Wedding ceremony, party location (both Friday and Saturday) and accomondation for everyone in one place. One minute walking distance between hotel and party location.",
+    "distanceToCity": "Two km to the beautiful old town of Neuburg on the Danube river."
+  },
+  "accommodation": {
+    "title": "Accommodation",
+    "price": "We have reserved a contingent in the hotel right next to the party location for a nightly rate of 144€ for two people in the standard room, including breakfast.",
+    "cancel": "You can cancel your booking for free until 2 weeks before the wedding in case you can't make it.",
+    "book": "Reserve your room via email",
+    "contact": "You can also contact the hotel directly via telephone: ",
+    "alternative": "You are free to choose an alternative accommodation if you'd like. If you do, please let us know in the RSVP so that we can inform the hotel accordingly."
+  },
+  "travelInfo": {
+    "title": "How to Get There"
+  },
+  "budget": {
+    "title": "Budget",
+    "subtitle": "Important Considerations",
+    "description": "We understand that showing up itself represents a significant financial investment for most of you. We wanted to have a full-weekend celebration to make the long travel worth it, and want to be fully transparent about the expected costs for you.",
+    "details": "🍻 Friday: We will pay the entrance fee of 15€ and provide Bavarian Brotzeitbrettl for everyone, rest of food and drinks are on you\n\n🍾 Saturday: All food and drinks are on us\n\n✈️ Because the wedding takes place during the Oktoberfest, book your flights early to save money!\n\n🎁 Please don't feel obliged to spend even more money on a present, you coming to celebrate with us is more than we could ask for! 🫶"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Your response",
+    "email": "Your email",
+    "name": "Your name",
+    "people_friday": "Number of people (Friday)",
+    "people_saturday": "Number of people (Saturday)",
+    "hotel_friday": "Staying in Acker Hotel (Friday)",
+    "hotel_saturday": "Staying in Acker Hotel (Saturday)",
+    "diet": "Dietary restrictions",
+    "diet_placeholder": "For example allergies, intolerances, vegan, vegetarian",
+    "comment": "Additional comments",
+    "comment_placeholder": "Any additional comments or requests",
+    "submit": "Submit response",
+    "update": "Update response",
+    "submitting": "Saving...",
+    "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly.",
+    "error": "Something went wrong. Please try again later or contact us if the problem persists."
+  }
+}

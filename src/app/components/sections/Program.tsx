@@ -1,40 +1,35 @@
+import { Dictionary } from "@/app/[lang]/types";
 import { Card, CardContainer, CardTitle } from "../Card";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
 
-const programSections = [
-  {
-    day: "Friday",
-    date: "19.09.2025",
-    fullDate: "Friday, September 19th",
-    events: [
-      { time: "15:00", description: "Check-in Hotel" },
-      { time: "18:00", description: "Oktoberfest Party" },
-    ],
-  },
-  {
-    day: "Saturday",
-    date: "20.09.2025",
-    fullDate: "Saturday, September 20th",
-    events: [
-      { time: "13:30", description: "Wedding Ceremony" },
-      { time: "02:00", description: "Lights out" },
-    ],
-  },
-  {
-    day: "Sunday",
-    date: "21.09.2025",
-    fullDate: "Sunday, September 21st",
-    events: [
-      { time: "09:00", description: "Brunch" },
-      { time: "11:00", description: "Check-out Hotel" },
-    ],
-  },
-];
-
-export const Program = () => (
+export const Program = ({dict}: {dict: Dictionary}) => {
+  const programSections = [
+    {
+      fullDate: dict.weekdays.Friday,
+      events: [
+        { time: "15:00", description: dict.program.checkin },
+        { time: "18:00", description: dict.program.party },
+      ],
+    },
+    {
+      fullDate: dict.weekdays.Saturday,
+      events: [
+        { time: "13:00", description: dict.program.wedding },
+        { time: "02:00", description: dict.program.lightsout },
+      ],
+    },
+    {
+      fullDate: dict.weekdays.Sunday,
+      events: [
+        { time: "09:00", description: dict.program.brunch },
+        { time: "11:00", description: dict.program.checkout },
+      ],
+    },
+  ];
+  return (
   <SectionContainer id="program" bgColor="#6C808C" bgImage="/acker-alm.webp">
-    <SectionTitle value="Program Highlights" color="white" />
+    <SectionTitle value={dict.program.title} color="white" />
     <CardContainer cols={3}>
       {programSections.map((section, index) => (
         <Card key={index}>
@@ -55,3 +50,4 @@ export const Program = () => (
     </CardContainer>
   </SectionContainer>
 );
+}
