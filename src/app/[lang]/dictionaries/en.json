@@ -54,7 +54,11 @@
     "submit": "Submit response",
     "update": "Update response",
     "submitting": "Saving...",
-    "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly.",
-    "error": "Something went wrong. Please try again later or contact us if the problem persists."
+    "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly."
+  },
+  "error": {
+    "title": "Oops! Something Went Wrong",
+    "message": "Something went wrong. Please try again later or contact us if the problem persists.",
+    "back": "Back to Home"
   }
 }

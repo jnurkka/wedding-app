@@ -42,7 +42,7 @@ export const Response = ({
         dict.rsvp.success,
       );
     } catch (_) {
-      setSubmitMessage(dict.rsvp.error);
+      setSubmitMessage(dict.error.message);
     } finally {
       setIsSubmitting(false);
     }

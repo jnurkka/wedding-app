@@ -54,7 +54,11 @@
     "submit": "Tallenna ilmoittautuminen",
     "update": "Päivitä ilmoittautuminen",
     "submitting": "Tallennetaan...",
-    "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin.",
-    "error": "Jotain meni pieleen. Yritä uudelleen myöhemmin tai ota yhteyttä meihin, jos ongelma toistuu."
+    "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin."
+  },
+  "error": {
+    "title": "Ups! Jotain meni pieleen",
+    "message": "Jotain meni pieleen. Yritä uudelleen myöhemmin tai ota yhteyttä meihin, jos ongelma toistuu.",
+    "back": "Takaisin"
   }
 }

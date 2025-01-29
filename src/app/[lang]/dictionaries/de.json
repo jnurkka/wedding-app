@@ -54,7 +54,11 @@
     "submit": "Anmeldung speichern",
     "update": "Anmeldung aktualisieren",
     "submitting": "Speichern...",
-    "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt",
-    "error": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut oder kontaktiere uns, wenn das Problem weiterhin besteht."
+    "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt"
+  },
+  "error": {
+    "title": "Oops! Etwas ist schief gelaufen",
+    "message": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut oder kontaktiere uns, wenn das Problem weiterhin besteht.",
+    "back": "Zurück"
   }
 }
