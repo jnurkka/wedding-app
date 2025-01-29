@@ -5,7 +5,7 @@ import { SectionTitle } from "../SectionTitle";
 import { Card, CardTitle } from "../Card";
 import { Dictionary } from "@/app/[lang]/types";
 
-export const Location = ({dict}: {dict: Dictionary}) => (
+export const Location = ({ dict }: { dict: Dictionary }) => (
   <SectionContainer id="location" bgImage="/hotel.webp" bgColor="white">
     <SectionTitle value={dict.location.title} color="white" />
     <Card>
@@ -22,9 +22,7 @@ export const Location = ({dict}: {dict: Dictionary}) => (
         </Link>
       </div>
       <div className="text-[#4A4238] text-base space-y-2 mb-4">
-        <p>
-          {dict.location.description}
-        </p>
+        <p>{dict.location.description}</p>
         <p>
           <Link
             href="https://maps.app.goo.gl/6yNbatiLMjMrRTQ57"

@@ -1,27 +1,29 @@
-"use server";
-
 import React from "react";
 import { submit } from "@/app/[lang]/login/actions";
 import { LoginFormComponent } from "./components/form";
-import { getDictionary } from "../dictionaries";
+import { getDictionary, Lang } from "../dictionaries";
 
-export async function submitLogin(email: string): Promise<string> {
+async function submitLogin(email: string): Promise<string> {
   "use server";
   const response = await submit(email);
   if (response.status === "error") {
     if (response.error === "Signups not allowed for otp") {
-      return 'signups-not-allowed';
+      return "signups-not-allowed";
     } else if (response.error === "email rate limit exceeded") {
-      return 'rate-limit-exceeded';
+      return "rate-limit-exceeded";
     } else {
-      return 'unknown-error'
+      return "unknown-error";
     }
   } else {
-    return 'success';
+    return "success";
   }
-};
+}
 
-export default async function LoginPage({params}: {params: Promise<{ lang: Lang }>}) {
+export default async function LoginPage({
+  params,
+}: {
+  params: Promise<{ lang: Lang }>;
+}) {
   const lang = (await params).lang;
   const dict = await getDictionary(lang);
 

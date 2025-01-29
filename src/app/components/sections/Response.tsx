@@ -11,7 +11,7 @@ export const Response = ({
   registration,
   submitRegistration,
   email,
-  dict
+  dict,
 }: {
   registration?: Registration | null;
   submitRegistration: (registration: Registration) => Promise<string>;
@@ -30,17 +30,16 @@ export const Response = ({
 
     try {
       await submitRegistration({
-        people_sat: parseInt(data.get("people_sat") as string || "0", 10),
-        people_fr: parseInt(data.get("people_fr") as string || "0", 10),
+        people_sat: parseInt((data.get("people_sat") as string) || "0", 10),
+        people_fr: parseInt((data.get("people_fr") as string) || "0", 10),
         staying_sat: data.get("staying_sat") === "on",
         staying_fr: data.get("staying_fr") === "on",
         name: data.get("respondentName") as string,
         diet: data.get("diet") as string,
         comment: data.get("comment") as string,
       });
-      setSubmitMessage(
-        dict.rsvp.success,
-      );
+      setSubmitMessage(dict.rsvp.success);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
       setSubmitMessage(dict.error.message);
     } finally {
@@ -48,7 +47,8 @@ export const Response = ({
     }
   };
 
-  const submitText = registration !== null ? dict.rsvp.update : dict.rsvp.submit;
+  const submitText =
+    registration !== null ? dict.rsvp.update : dict.rsvp.submit;
 
   return (
     <Suspense
@@ -68,7 +68,9 @@ export const Response = ({
             </span>
             <div className="grid grid-cols-1 gap-4">
               <label className="block text-[#4A4238]">
-                <span className="block mb-2 font-semibold">{dict.rsvp.name}</span>
+                <span className="block mb-2 font-semibold">
+                  {dict.rsvp.name}
+                </span>
                 <input
                   type="text"
                   name="respondentName"
@@ -130,9 +132,7 @@ export const Response = ({
               </label>
             </div>
             <label className="block text-[#4A4238]">
-              <span className="block mb-2 font-semibold">
-                {dict.rsvp.diet}
-              </span>
+              <span className="block mb-2 font-semibold">{dict.rsvp.diet}</span>
               <textarea
                 name="diet"
                 rows={2}
@@ -143,7 +143,7 @@ export const Response = ({
             </label>
             <label className="block text-[#4A4238]">
               <span className="block mb-2 font-semibold">
-{dict.rsvp.comment}
+                {dict.rsvp.comment}
               </span>
               <textarea
                 name="comment"

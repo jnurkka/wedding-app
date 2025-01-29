@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { updateSession } from "@/utils/supabase/middleware";
 
-const locales = ['de','en','fi'];
+const locales = ["de", "en", "fi"];
 const defaultLocale = locales[0];
 
 const getLocale = (request: NextRequest) => {
@@ -14,21 +14,21 @@ const getLocale = (request: NextRequest) => {
     }
   }
   return defaultLocale;
-}
+};
 
 export async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
+  const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
+  );
   console.log(pathname, pathnameHasLocale);
 
   if (pathnameHasLocale) {
     return await updateSession(request);
   }
 
-  const locale = getLocale(request)
-  request.nextUrl.pathname = `/${locale}${pathname}`
+  const locale = getLocale(request);
+  request.nextUrl.pathname = `/${locale}${pathname}`;
   // Create a new response that combines the session cookies with the redirect
   return NextResponse.redirect(request.nextUrl);
 }

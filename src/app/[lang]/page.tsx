@@ -6,7 +6,7 @@ import { Registration } from "../data";
 import { getDictionary, Lang } from "./dictionaries";
 
 async function submitRegistration(registration: Registration) {
-  "use server"; // mark function as a server action (fixes the error)
+  "use server";
   const supabase = await createClient();
   const {
     data: { user },
@@ -36,7 +36,9 @@ async function submitRegistration(registration: Registration) {
 
 export default async function PrivatePage({
   params,
-}: {params: Promise<{ lang: Lang }>}) {
+}: {
+  params: Promise<{ lang: Lang }>;
+}) {
   const lang = (await params).lang;
   const dictionary = await getDictionary(lang);
   const supabase = await createClient();

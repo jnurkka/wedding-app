@@ -5,7 +5,7 @@ import { CheckEmailComponent } from "./check-email";
 
 export const LoginFormComponent = ({
   submit,
-  dict
+  dict,
 }: {
   submit: (email: string) => Promise<string>;
   dict: Dictionary;
@@ -33,9 +33,7 @@ export const LoginFormComponent = ({
     }
   };
   if (emailSent) {
-    return (
-      <CheckEmailComponent dict={dict}/>
-    )
+    return <CheckEmailComponent dict={dict} />;
   }
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">

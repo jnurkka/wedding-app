@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface NavigationDotsProps {
   sections: string[];
@@ -15,7 +15,7 @@ export const NavigationDots: React.FC<NavigationDotsProps> = ({ sections }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = sections.findIndex(
-              (section) => section === entry.target.id
+              (section) => section === entry.target.id,
             );
             if (index !== -1) {
               setActiveSection(index);
@@ -25,7 +25,7 @@ export const NavigationDots: React.FC<NavigationDotsProps> = ({ sections }) => {
       },
       {
         threshold: 0.5,
-      }
+      },
     );
 
     // Observe all sections
@@ -39,7 +39,7 @@ export const NavigationDots: React.FC<NavigationDotsProps> = ({ sections }) => {
 
   const scrollToSection = (index: number) => {
     const sectionElement = document.getElementById(sections[index]);
-    sectionElement?.scrollIntoView({ behavior: 'smooth' });
+    sectionElement?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -50,9 +50,11 @@ export const NavigationDots: React.FC<NavigationDotsProps> = ({ sections }) => {
           onClick={() => scrollToSection(index)}
           className={`
             w-2 h-2 rounded-full transition-all duration-300 bg-white
-            ${activeSection === index
-              ? 'scale-150 opacity-100'
-              : 'bg-opacity-50 hover:bg-opacity-100 hover:scale-150 hover:opacity-75 opacity-50'}
+            ${
+              activeSection === index
+                ? "scale-150 opacity-100"
+                : "bg-opacity-50 hover:bg-opacity-100 hover:scale-150 hover:opacity-75 opacity-50"
+            }
           `}
           aria-label={`Navigate to ${section} section`}
         />

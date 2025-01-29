@@ -31,8 +31,8 @@ html {
 
 /* Navigation Dots Styling */
 :root {
-  --primary-color: #053C5F; /* Match your wedding app's color scheme */
-  --secondary-color: #6C808C;
+  --primary-color: #053c5f; /* Match your wedding app's color scheme */
+  --secondary-color: #6c808c;
 }
 
 .navigation-dots button {

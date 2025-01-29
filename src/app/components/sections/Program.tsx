@@ -3,7 +3,7 @@ import { Card, CardContainer, CardTitle } from "../Card";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
 
-export const Program = ({dict}: {dict: Dictionary}) => {
+export const Program = ({ dict }: { dict: Dictionary }) => {
   const programSections = [
     {
       fullDate: dict.weekdays.Friday,
@@ -28,26 +28,26 @@ export const Program = ({dict}: {dict: Dictionary}) => {
     },
   ];
   return (
-  <SectionContainer id="program" bgColor="#6C808C" bgImage="/acker-alm.webp">
-    <SectionTitle value={dict.program.title} color="white" />
-    <CardContainer cols={3}>
-      {programSections.map((section, index) => (
-        <Card key={index}>
-          <CardTitle value={section.fullDate} />
-          <ul>
-            {section.events.map((event, eventIndex) => (
-              <li
-                key={eventIndex}
-                className="mb-2 text-[#4A4238] max-sm:text-base"
-              >
-                <span className="font-bold">{event.time}</span> -{" "}
-                {event.description}
-              </li>
-            ))}
-          </ul>
-        </Card>
-      ))}
-    </CardContainer>
-  </SectionContainer>
-);
-}
+    <SectionContainer id="program" bgColor="#6C808C" bgImage="/acker-alm.webp">
+      <SectionTitle value={dict.program.title} color="white" />
+      <CardContainer cols={3}>
+        {programSections.map((section, index) => (
+          <Card key={index}>
+            <CardTitle value={section.fullDate} />
+            <ul>
+              {section.events.map((event, eventIndex) => (
+                <li
+                  key={eventIndex}
+                  className="mb-2 text-[#4A4238] max-sm:text-base"
+                >
+                  <span className="font-bold">{event.time}</span> -{" "}
+                  {event.description}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        ))}
+      </CardContainer>
+    </SectionContainer>
+  );
+};

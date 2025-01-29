@@ -51,7 +51,7 @@ const travelOptions = [
   },
 ];
 
-export const TravelInfo = ({dict}: {dict: Dictionary}) => (
+export const TravelInfo = ({ dict }: { dict: Dictionary }) => (
   <SectionContainer id="travel-info" bgColor="#E6D2C3">
     <SectionTitle value={dict.travelInfo.title} />
     <CardContainer cols={3}>
