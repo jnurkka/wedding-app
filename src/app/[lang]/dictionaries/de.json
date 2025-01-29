@@ -15,8 +15,8 @@
   },
   "location": {
     "title": "Location",
-    "description": "Trauung, Feier (Freitag und Samstag) und Übernachtung für alle in einem Ort. Eine Minute zu Fuß vom Hotel zur Alm.",
-    "distanceToCity": "Zwei Kilometer zum Altstadt von Neuburg an der Donau."
+    "description": "Trauung, Feier (Freitag und Samstag) und Übernachtung für alle an einem Ort. Eine Minute zu Fuß vom Hotel zur Alm.",
+    "distanceToCity": "Zwei Kilometer zur Altstadt von Neuburg an der Donau."
   },
   "accommodation": {
     "title": "Übernachtung",
@@ -34,8 +34,8 @@
     "subtitle": "Wichtige Erwägungen",
     "description": "Wir verstehen, dass für viele alleine die Teilnahme ein signifikantes finanzielles Investment ist. Wir wollten das ganze Wochenende feiern, damit die lange Anreise sich lohnt und wollen transparent jeden über die zu erwartenden Kosten informieren.",
     "friday": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle, alle sonstigen Getränke und Essen soll jeder selbst zahlen.",
-    "saturday": "🍾 Samstag: Alles was ich zu trinken und zu essen schafft, geht an uns.",
-    "flights": "✈️ Da die Hochzeit gleichzeitig mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!",
+    "saturday": "🍾 Samstag: Alles was ihr esst und trinkt, geht auf uns.",
+    "flights": "✈️ Da die Hochzeit zeitgleich mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!",
     "presents": "🎁 Bitte fühlt euch nicht verpflichtet, zusätzlich noch etwas zu schenken. Eure Anwesenheit ist mehr als genug für uns! 🫶"
   },
   "rsvp": {
@@ -43,10 +43,10 @@
     "subtitle": "Deine/Eure Anmeldung",
     "email": "Deine Email",
     "name": "Dein Name",
-    "people_friday": "Anzahl Personen (Friday)",
-    "people_saturday": "Anzahl Personen (Saturday)",
-    "hotel_friday": "Übernachtung im Acker Hotel (Friday)",
-    "hotel_saturday": "Übernachtung im Acker Hotel (Saturday)",
+    "people_friday": "Anzahl Personen (Freitag)",
+    "people_saturday": "Anzahl Personen (Samstag)",
+    "hotel_friday": "Übernachtung im Acker Hotel (Freitag)",
+    "hotel_saturday": "Übernachtung im Acker Hotel (Samstag)",
     "diet": "Ernährungseinschränkungen",
     "diet_placeholder": "Allergien, Unverträglichkeiten, Vegan, Vegetarisch, etc.",
     "comment": "Kommentare",

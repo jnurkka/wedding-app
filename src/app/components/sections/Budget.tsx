@@ -20,6 +20,7 @@ export const Budget = ({ dict }: { dict: Dictionary }) => {
             <br />
             {dict.budget.flights}
             <br />
+            <br />
             {dict.budget.presents}
           </p>
         </div>
