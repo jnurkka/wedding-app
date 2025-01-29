@@ -28,3 +28,17 @@ html {
     transition: none;
   }
 }
+
+/* Navigation Dots Styling */
+:root {
+  --primary-color: #053C5F; /* Match your wedding app's color scheme */
+  --secondary-color: #6C808C;
+}
+
+.navigation-dots button {
+  transition: all 0.3s ease;
+}
+
+.navigation-dots button:hover {
+  transform: scale(1.2);
+}

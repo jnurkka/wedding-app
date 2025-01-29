@@ -5,6 +5,7 @@ export const Landing: React.FC<{ start: string; end: string }> = ({
   end,
 }) => (
   <div
+    id="landing"
     className="relative h-screen w-screen bg-cover bg-bottom snap-start max-sm:bg-[position:40%_center]"
     style={{ backgroundImage: "url('/jjs.webp')" }}
   >

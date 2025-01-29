@@ -5,7 +5,7 @@ import { SectionTitle } from "../SectionTitle";
 
 export const Accommodation = () => {
   return (
-    <SectionContainer bgImage="/hotel-interior.webp" bgColor="white">
+    <SectionContainer id="accommodation" bgImage="/hotel-interior.webp" bgColor="white">
       <SectionTitle value="Accommodation" color="white" />
       <Card>
         <CardTitle value="Acker Hotel" />

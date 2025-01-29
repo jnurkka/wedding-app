@@ -58,8 +58,8 @@ const travelOptions = [
 ];
 
 export const TravelInfo = () => (
-  <SectionContainer bgColor="#E6D2C3">
-    <SectionTitle value="How to Get There" color="#4A4238" />
+  <SectionContainer id="travel-info" bgColor="#E6D2C3">
+    <SectionTitle value="How to Get There" />
     <CardContainer cols={3}>
       {travelOptions.map((travelOption, index) => (
         <Card key={index}>

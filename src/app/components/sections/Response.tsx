@@ -57,7 +57,7 @@ export const Response = ({
         </div>
       }
     >
-      <SectionContainer bgColor="#E6D2C3">
+      <SectionContainer id="response" bgColor="#E6D2C3">
         <SectionTitle value="RSVP" />
         <Card>
           <CardTitle value="Your personal response" />

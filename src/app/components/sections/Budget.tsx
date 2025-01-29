@@ -5,7 +5,7 @@ import { SectionTitle } from "../SectionTitle";
 
 export const Budget = () => {
   return (
-    <SectionContainer bgColor="#E6D2C3">
+    <SectionContainer id="budget" bgColor="#E6D2C3">
       <SectionTitle value="Budget" color="#4A4238" />
       <Card>
         <CardTitle value="Important Considerations" />

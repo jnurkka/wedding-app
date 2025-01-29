@@ -4,7 +4,8 @@ export const SectionContainer: React.FC<{
   children: React.ReactNode;
   bgColor: string;
   bgImage?: string;
-}> = ({ children, bgColor, bgImage }) => {
+  id: string;
+}> = ({ id, children, bgColor, bgImage }) => {
   const className = `section relative min-h-screen w-screen items-center snap-start flex flex-col justify-center px-6 md:px-12 lg:px-16 py-8`;
   const style = {
     backgroundColor: bgColor,
@@ -17,7 +18,7 @@ export const SectionContainer: React.FC<{
       : {}),
   };
   return (
-    <div className={className} style={style}>
+    <div id={id} className={className} style={style}>
       {bgImage && <Overlay />}
       {children}
     </div>

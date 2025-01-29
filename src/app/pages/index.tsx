@@ -9,6 +9,7 @@ import { Program } from "../components/sections/Program";
 import { Response } from "../components/sections/Response";
 import { TravelInfo } from "../components/sections/TravelInfo";
 import { Registration } from "../data";
+import { NavigationDots } from "../components/NavigationDots";
 
 export const SaveTheDate = ({
   registration,
@@ -39,19 +40,32 @@ export const SaveTheDate = ({
     return () => observer.disconnect();
   }, []);
 
+  const sectionIds = [
+    'landing',
+    'program',
+    'location',
+    'accommodation',
+    'travel-info',
+    'budget',
+    'response'
+  ];
+
   return (
-    <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
-      <Landing start="19.09." end="21.09.2025" />
-      <Program />
-      <Location />
-      <Accommodation />
+    <>
+    <NavigationDots sections={sectionIds} />
+    <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll relative">
+      <Landing  start="19.09." end="21.09.2025" />
+      <Program  />
+      <Location  />
+      <Accommodation  />
       <TravelInfo />
-      <Budget />
+      <Budget  />
       <Response
         registration={registration}
         submitRegistration={submitRegistration}
         email={email}
       />
     </div>
+    </>
   );
 };
