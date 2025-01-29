@@ -17,12 +17,14 @@ export const Budget = () => {
             to be fully transparent about the expected costs for you.
           </p>
           <p>
-            Friday: Guests pay for their own food and drinks
+            🍻 Friday: We will pay the entrance fee of 15€ and provide Bavarian Brotzeitbrettl for everyone, rest of food and drinks are on you
             <br />
-            Saturday: All food and drinks are on us
+            🍾 Saturday: All food and drinks are on us
             <br />
             <br />
-            Please don&apos;t feel obliged to spend even more money on a
+            ✈️ Because the wedding takes place during the Oktoberfest, book your flights early to save money!
+            <br />
+            🎁 Please don&apos;t feel obliged to spend even more money on a
             present, you coming to celebrate with us is more than we could ask
             for! 🫶
           </p>
