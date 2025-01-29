@@ -43,7 +43,7 @@ export const NavigationDots: React.FC<NavigationDotsProps> = ({ sections }) => {
   };
 
   return (
-    <div className="fixed right-2 lg:right-4 top-1/2 transform -translate-y-1/2 z-50 flex flex-col space-y-4">
+    <div className="fixed right-2 lg:right-6 top-1/2 transform -translate-y-1/2 z-50 flex flex-col space-y-4">
       {sections.map((section, index) => (
         <button
           key={section}

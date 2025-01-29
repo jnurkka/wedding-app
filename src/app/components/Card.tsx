@@ -4,13 +4,13 @@ export const CardContainer: React.FC<{
 }> = ({ children, cols }) => {
   const colClasses =
     {
-      2: "md:grid-cols-2",
-      3: "md:grid-cols-3",
-    }[cols] || "md:grid-cols-1";
+      2: "lg:grid-cols-2",
+      3: "lg:grid-cols-3",
+    }[cols] || "lg:grid-cols-1";
 
   return (
     <div
-      className={`grid grid-cols-1 ${colClasses} gap-8 w-full max-w-7xl md:max-h-none`}
+      className={`grid grid-cols-1 ${colClasses} gap-8 w-full mx-auto place-items-center max-w-7xl md:max-h-none`}
     >
       {children}
     </div>
