@@ -3,10 +3,11 @@ import { FaMapMarkerAlt, FaExternalLinkAlt } from "react-icons/fa";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
 import { Card, CardTitle } from "../Card";
+import { Dictionary } from "@/app/[lang]/types";
 
-export const Location = () => (
+export const Location = ({dict}: {dict: Dictionary}) => (
   <SectionContainer id="location" bgImage="/hotel.webp" bgColor="white">
-    <SectionTitle value="Location" color="white" />
+    <SectionTitle value={dict.location.title} color="white" />
     <Card>
       <CardTitle value="Acker Alm & Hotel" />
       <div className="flex items-center justify-center mb-4">
@@ -22,9 +23,7 @@ export const Location = () => (
       </div>
       <div className="text-[#4A4238] text-base space-y-2 mb-4">
         <p>
-          Wedding ceremony, party location (both Friday and Saturday) and
-          accomondation for everyone in one place. One minute walking distance
-          between hotel and party location.
+          {dict.location.description}
         </p>
         <p>
           <Link
@@ -32,7 +31,7 @@ export const Location = () => (
             target="_blank"
             className="ml-1 hover:underline"
           >
-            Two km to the beautiful old town of Neuburg on the Danube river{" "}
+            {dict.location.distanceToCity}
             <FaExternalLinkAlt className="ml-1 inline text-sm" />
           </Link>
         </p>

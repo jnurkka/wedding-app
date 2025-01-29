@@ -1,0 +1,57 @@
+{
+  "weekdays": {
+    "Friday": "Perjantai, 19. syyskuuta",
+    "Saturday": "Lauantai, 20. syyskuuta",
+    "Sunday": "Sunnuntai, 21. syyskuuta"
+  },
+  "program": {
+    "title": "Ohjelma",
+    "checkin": "Check-in hotelliin",
+    "party": "Oktoberfest-juhla",
+    "wedding": "Vihkitilaisuus",
+    "lightsout": "Pilkku",
+    "brunch": "Brunssi",
+    "checkout": "Check-out hotellista"
+  },
+  "location": {
+    "title": "Juhlapaikka",
+    "description": "Vihkitilaisuus, juhlat (perjantai ja lauantai) ja majoittuminen kaikille samassa paikassa. Minuutin kävelymatka juhlapaikasta hotelliin.",
+    "distanceToCity": "Kahden kilometrin matka Neuburgin vanhaankaupunkiin Tonavan rannalla."
+  },
+  "accommodation": {
+    "title": "Majoittuminen",
+    "price": "Olemme varanneet vieraillemme mahdollisuuden majoittua hotelliin juhlapaikan vieressä hintaan 144€ per yö per kahden hengen huone. Hinta sisältää aamiaisen. Hotellihuone jokaisen on kuitenkin varattava itse.",
+    "cancel": "Voit peruuttaa hotellimajoituksen tarvittaessa ilman maksua 2 viikkoa ennen juhlaa.",
+    "book": "Varaa majoitus sähköpostitse",
+    "contact": "Voit myös ottaa yhteyttä hotelliin suoraan puhelimitse: ",
+    "alternative": "Voitte tietysti halutessanne majoittua myös muualla. Jos näin teette, ilmoitattehan siitä meille ilmoittautumisen yhteydessä, jotta voimme informoida hotellia sen mukaisesti."
+  },
+  "travelInfo": {
+    "title": "Reittiohjeet"
+  },
+  "budget": {
+    "title": "Budjetti",
+    "subtitle": "Huomioitavaa kustannuksista",
+    "description": "Ymmärrämme, että monille jo paikalle tuleminen on merkittävä taloudellinen investointi. Halusimme järjestää koko viikonlopun juhlan, jotta pitkä matka olisi sen arvoista, ja haluamme informoida kaikkia avoimesti odotettavista kustannuksista.",
+    "details": "🍻 Perjantai: Maksamme sisäänpääsymaksun 15€ ja tarjoamme kaikille Bajerilaista Brotzeitbrettl:ä. Muut ruoat ja juomat jokainen maksaa itse\n\n🍾 Lauantai: Kaikki mitä saatte juotua ja syötyä menee meidän piikkiin\n\n ✈️ Koska häät ovat samaan aikaan Oktoberfestin kanssa, varaa lentosi ajoissa säästääksesi rahaa!\n\n🎁 Älä tunne velvoitetta käyttää rahaa lahjaan, paikallaolonne on meille kaikista arvokkain lahja! 🫶"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Ilmoittautuminen",
+    "email": "Sähköpostiosoite",
+    "name": "Nimi",
+    "people_friday": "Henkilömäärä (Perjantai)",
+    "people_saturday": "Henkilömäärä (Lauantai)",
+    "hotel_friday": "Majoitumme Acker Hotelissa (Perjantai)",
+    "hotel_saturday": "Majoitumme Acker Hotelissa (Lauantai)",
+    "diet": "Ruokavaliorajoitteet",
+    "diet_placeholder": "Allergiat, Vegaaninen, Vegetaarinen, jne.",
+    "comment": "Kommentit",
+    "comment_placeholder": "Muut kommentit tai pyynnöt",
+    "submit": "Tallenna ilmoittautuminen",
+    "update": "Päivitä ilmoittautuminen",
+    "submitting": "Tallennetaan...",
+    "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin.",
+    "error": "Jotain meni pieleen. Yritä uudelleen myöhemmin tai ota yhteyttä meihin, jos ongelma toistuu."
+  }
+}

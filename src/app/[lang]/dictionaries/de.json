@@ -1,0 +1,57 @@
+{
+  "weekdays": {
+    "Friday": "Freitag, 19. September",
+    "Saturday": "Samstag, 20. September",
+    "Sunday": "Sonntag, 21. September"
+  },
+  "program": {
+    "title": "Programmhighlights",
+    "checkin": "Check-in Hotel",
+    "party": "Oktoberfest Party",
+    "wedding": "Trauung",
+    "lightsout": "Zapfenstreich",
+    "brunch": "Brunch",
+    "checkout": "Check-out Hotel"
+  },
+  "location": {
+    "title": "Location",
+    "description": "Trauung, Feier (Freitag und Samstag) und Übernachtung für alle in einem Ort. Eine Minute zu Fuß vom Hotel zur Alm.",
+    "distanceToCity": "Zwei Kilometer zum Altstadt von Neuburg an der Donau."
+  },
+  "accommodation": {
+    "title": "Übernachtung",
+    "price": "Wir haben ein Kontingent für alle Gäste im Acker Hotel direkt neben der Location der Feier für einen Preis von 144€ pro Nacht für ein Doppelzimmer inklusive Fruhstück. Ihr müsstet nur euer eigenes Zimmer selbst reservieren.",
+    "cancel": "Die Reservierung kann bis zu zwei Wochen vor der Feier kostenlos storniert werden.",
+    "book": "Zimmer per Email reservieren",
+    "contact": "Du kannst das Hotel auch direkt telefonisch kontaktieren: ",
+    "alternative": "Du kannst selbstverständlich auch eine alternative Unterkunft wählen. Wir bitten nur uns darüber im RSVP zu informieren, damit wir das Hotel entsprechend informieren können."
+  },
+  "travelInfo": {
+    "title": "Anreise"
+  },
+  "budget": {
+    "title": "Budget",
+    "subtitle": "Wichtige Erwägungen",
+    "description": "Wir verstehen, dass für viele alleine die Teilnahme ein signifikantes finanzielles Investment ist. Wir wollten das ganze Wochenende feiern, damit die lange Anreise sich lohnt und wollen transparent jeden über die zu erwartenden Kosten informieren.",
+    "details": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle, alle sonstigen Getränke und Essen soll jeder selbst zahlen\n\n🍾 Samstag: Alles was ich schafft zu trinken und essen geht an uns\n\n✈️ Weil die Hochzeit gleichzeitig mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!\n\n🎁 Bitte fühlt euch nicht verflichtet, zusätzlich noch etwas zu schenken. Eure Anwesenheit ist mehr als genug für uns! 🫶"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Deine/Eure Anmeldung",
+    "email": "Deine Email",
+    "name": "Dein Name",
+    "people_friday": "Anzahl Personen (Friday)",
+    "people_saturday": "Anzahl Personen (Saturday)",
+    "hotel_friday": "Übernachtung im Acker Hotel (Friday)",
+    "hotel_saturday": "Übernachtung im Acker Hotel (Saturday)",
+    "diet": "Ernährungseinschränkungen",
+    "diet_placeholder": "Allergien, Unverträglichkeiten, Vegan, Vegetarisch, etc.",
+    "comment": "Kommentare",
+    "comment_placeholder": "Sonstige Anmerkungen oder Fragen",
+    "submit": "Anmeldung speichern",
+    "update": "Anmeldung aktualisieren",
+    "submitting": "Speichern...",
+    "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt",
+    "error": "Es ist ein Fehler aufgetreten. Bitte versuche es erneut oder kontaktiere uns, wenn das Problem weiterhin besteht."
+  }
+}

@@ -1,8 +1,9 @@
 import { redirect } from "next/navigation";
 
 import { createClient } from "@/utils/supabase/server";
-import { SaveTheDate } from "./pages";
-import { Registration } from "./data";
+import { SaveTheDate } from "../pages";
+import { Registration } from "../data";
+import { getDictionary, Lang } from "./dictionaries";
 
 async function submitRegistration(registration: Registration) {
   "use server"; // mark function as a server action (fixes the error)
@@ -33,11 +34,15 @@ async function submitRegistration(registration: Registration) {
   return "success";
 }
 
-export default async function PrivatePage() {
+export default async function PrivatePage({
+  params,
+}: {params: Promise<{ lang: Lang }>}) {
+  const lang = (await params).lang;
+  const dictionary = await getDictionary(lang);
   const supabase = await createClient();
 
   const { data: userData, error } = await supabase.auth.getUser();
-  if (error || !userData?.user) {
+  if (error || !userData?.user || !userData.user.email) {
     redirect("/login");
   }
 
@@ -60,7 +65,8 @@ export default async function PrivatePage() {
     <SaveTheDate
       registration={registration}
       submitRegistration={submitRegistration}
-      email={userData.user.email!}
+      email={userData.user.email}
+      dict={dictionary}
     />
   );
 }
