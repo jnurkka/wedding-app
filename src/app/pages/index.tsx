@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect } from 'react';
 import { Accommodation } from "../components/sections/Accomodation";
 import { Budget } from "../components/sections/Budget";
 import { Landing } from "../components/sections/Landing";
@@ -16,6 +19,26 @@ export const SaveTheDate = ({
   submitRegistration: (registration: Registration) => Promise<string>;
   email: string;
 }) => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger when 50% of the section is visible
+    });
+
+    // Observe all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
       <Landing start="19.09." end="21.09.2025" />
