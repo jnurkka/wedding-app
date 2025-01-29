@@ -18,7 +18,7 @@ export const CardContainer: React.FC<{
 };
 
 export const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="bg-white/80 z-10 p-8 rounded-xl shadow-lg text-center min-w-[250px] w-full max-w-2xl">
+  <div className="bg-white/80 z-10 p-8 rounded-xl shadow-lg text-center min-w-[250px] w-full h-full max-w-2xl">
     {children}
   </div>
 );
