@@ -47,6 +47,8 @@ export const Response = ({
     }
   };
 
+  const submitText = registration !== null ? "Update response" : "Submit response";
+
   return (
     <Suspense
       fallback={
@@ -157,7 +159,7 @@ export const Response = ({
                 disabled={isSubmitting}
                 className="w-full max-w-xs mx-auto bg-[#4A4238] text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition-colors disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-[#4A4238] focus:ring-opacity-50"
               >
-                {isSubmitting ? "Submitting..." : "Submit RSVP"}
+                {isSubmitting ? "Submitting..." : submitText}
               </button>
             </div>
 
