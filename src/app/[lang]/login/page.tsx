@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { submit } from "@/app/login/actions";
+import { submit } from "@/app/[lang]/login/actions";
 import { LoginFormComponent } from "./components/form";
 import { CheckEmailComponent } from "./components/check-email";
 
