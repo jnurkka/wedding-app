@@ -9,13 +9,20 @@ export const Budget = ({dict}: {dict: Dictionary}) => {
     <SectionContainer id="budget" bgColor="#E6D2C3">
       <SectionTitle value={dict.budget.title} color="#4A4238" />
       <Card>
-        <CardTitle value={dict.budget.subtitle} />
         <div className="space-y-4 text-[#4A4238]">
           <p>
             {dict.budget.description}
           </p>
-          <p>
-            {dict.budget.details}
+          <CardTitle value={dict.budget.subtitle} />
+          <p className="text-left">
+            {dict.budget.friday}
+            <br />
+            {dict.budget.saturday}
+            <br />
+            <br />
+            {dict.budget.flights}
+            <br />
+            {dict.budget.presents}
           </p>
         </div>
       </Card>

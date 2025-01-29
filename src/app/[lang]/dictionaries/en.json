@@ -33,7 +33,10 @@
     "title": "Budget",
     "subtitle": "Important Considerations",
     "description": "We understand that showing up itself represents a significant financial investment for most of you. We wanted to have a full-weekend celebration to make the long travel worth it, and want to be fully transparent about the expected costs for you.",
-    "details": "🍻 Friday: We will pay the entrance fee of 15€ and provide Bavarian Brotzeitbrettl for everyone, rest of food and drinks are on you\n\n🍾 Saturday: All food and drinks are on us\n\n✈️ Because the wedding takes place during the Oktoberfest, book your flights early to save money!\n\n🎁 Please don't feel obliged to spend even more money on a present, you coming to celebrate with us is more than we could ask for! 🫶"
+    "friday": "🍻 Friday: We will pay the entrance fee of 15€ and provide Bavarian Brotzeitbrettl for everyone, rest of food and drinks are on you.",
+    "saturday": "🍾 Saturday: All food and drinks are on us.",
+    "flights": "✈️ Because the wedding takes place during the Oktoberfest, book your flights early to save money!",
+    "presents": "🎁 Please don't feel obliged to spend even more money on a present, you coming to celebrate with us is more than we could ask for! 🫶"
   },
   "rsvp": {
     "title": "RSVP",

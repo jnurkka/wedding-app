@@ -33,7 +33,10 @@
     "title": "Budget",
     "subtitle": "Wichtige Erwägungen",
     "description": "Wir verstehen, dass für viele alleine die Teilnahme ein signifikantes finanzielles Investment ist. Wir wollten das ganze Wochenende feiern, damit die lange Anreise sich lohnt und wollen transparent jeden über die zu erwartenden Kosten informieren.",
-    "details": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle, alle sonstigen Getränke und Essen soll jeder selbst zahlen\n\n🍾 Samstag: Alles was ich schafft zu trinken und essen geht an uns\n\n✈️ Weil die Hochzeit gleichzeitig mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!\n\n🎁 Bitte fühlt euch nicht verflichtet, zusätzlich noch etwas zu schenken. Eure Anwesenheit ist mehr als genug für uns! 🫶"
+    "friday": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle, alle sonstigen Getränke und Essen soll jeder selbst zahlen.",
+    "saturday": "🍾 Samstag: Alles was ich zu trinken und zu essen schafft, geht an uns.",
+    "flights": "✈️ Da die Hochzeit gleichzeitig mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!",
+    "presents": "🎁 Bitte fühlt euch nicht verpflichtet, zusätzlich noch etwas zu schenken. Eure Anwesenheit ist mehr als genug für uns! 🫶"
   },
   "rsvp": {
     "title": "RSVP",
