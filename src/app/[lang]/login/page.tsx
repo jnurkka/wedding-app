@@ -1,39 +1,33 @@
-"use client";
+"use server";
 
 import React from "react";
 import { submit } from "@/app/[lang]/login/actions";
 import { LoginFormComponent } from "./components/form";
-import { CheckEmailComponent } from "./components/check-email";
+import { getDictionary } from "../dictionaries";
 
-export default function LoginPage() {
-  const [error, setError] = React.useState<string | null>(null);
-  const [emailSent, setEmailSent] = React.useState<boolean>(false);
-
-  const handleSubmit = async (email: string) => {
-    const response = await submit(email);
-    if (response.status === "error") {
-      if (response.error === "Signups not allowed for otp") {
-        setError(
-          "This email has not been invited. Please check your input or contact us to invite you to the wedding.",
-        );
-      } else {
-        setError(
-          "Something went wrong. Please try again later or contact us if the problem persists.",
-        );
-      }
+export async function submitLogin(email: string): Promise<string> {
+  "use server";
+  const response = await submit(email);
+  if (response.status === "error") {
+    if (response.error === "Signups not allowed for otp") {
+      return 'signups-not-allowed';
+    } else if (response.error === "email rate limit exceeded") {
+      return 'rate-limit-exceeded';
     } else {
-      setError(null);
-      setEmailSent(true);
+      return 'unknown-error'
     }
-  };
+  } else {
+    return 'success';
+  }
+};
+
+export default async function LoginPage({params}: {params: Promise<{ lang: Lang }>}) {
+  const lang = (await params).lang;
+  const dict = await getDictionary(lang);
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-      {!emailSent ? (
-        <LoginFormComponent error={error} submit={handleSubmit} />
-      ) : (
-        <CheckEmailComponent />
-      )}
+      <LoginFormComponent submit={submitLogin} dict={dict} />
     </div>
   );
 }

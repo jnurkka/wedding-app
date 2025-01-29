@@ -1,4 +1,6 @@
-export const CheckEmailComponent = () => {
+import { Dictionary } from "../../types";
+
+export const CheckEmailComponent = ({dict}: {dict: Dictionary}) => {
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">
       <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
@@ -17,15 +19,13 @@ export const CheckEmailComponent = () => {
           />
         </svg>
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
-          Check Your Email
+          {dict.login.check_email_title}
         </h2>
         <p className="text-gray-600 mb-6">
-          {`We've sent a magic link to your email address.
-          Click the link to sign in.`}
+          {dict.login.check_email_message}
         </p>
         <p className="text-sm text-gray-500">
-          {`The link will expire in 1 hour.
-          If you don't see the email, check your spam folder.`}
+          {dict.login.check_email_message_2}
         </p>
       </div>
     </div>

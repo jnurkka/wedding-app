@@ -60,5 +60,16 @@
     "title": "Oops! Something Went Wrong",
     "message": "Something went wrong. Please try again later or contact us if the problem persists.",
     "back": "Back to Home"
+  },
+  "login": {
+    "title": "Sign in",
+    "subtitle": "Enter your email and we'll send you a magic link to sign in",
+    "email": "Email address",
+    "submit": "Send magic link",
+    "not_invited": "This email has not been invited. Please check your input or contact us to invite you to the wedding.",
+    "rate_limit_exceeded": "Too many attempts. Please try again later.",
+    "check_email_title": "Check Your Email",
+    "check_email_message": "We've sent a magic link to your email address. Click the link to sign in.",
+    "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder."
   }
 }

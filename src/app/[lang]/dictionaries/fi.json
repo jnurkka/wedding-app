@@ -60,5 +60,16 @@
     "title": "Ups! Jotain meni pieleen",
     "message": "Jotain meni pieleen. Yritä uudelleen myöhemmin tai ota yhteyttä meihin, jos ongelma toistuu.",
     "back": "Takaisin"
+  },
+  "login": {
+    "title": "Kirjaudu sisään",
+    "subtitle": "Syötä sähköpostiosoitteesi ja lähetämme sinulle magic linkin, jolla voit kirjautua sisään.",
+    "email": "Sähköpostiosoite",
+    "submit": "Lähetä magic link",
+    "not_invited": "Syöttämääsi sähköpostiosoitetta ei ole kutsuttu häihin. Tarkista antamasi osoite tai ota yhteyttä meihin.",
+    "rate_limit_exceeded": "Liian monta yritystä. Yritä myöhemmin uudelleen.",
+    "check_email_title": "Tarkista sähköpostisi",
+    "check_email_message": "Lahetimme sinulle magic linkin sähköpostiosoitteeseesi. Klikkaa linkkiä kirjautuaksesi sisään.",
+    "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä sähköpostistasi, tarkista myös spam-kansio."
   }
 }
