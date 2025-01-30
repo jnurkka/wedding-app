@@ -31,46 +31,56 @@ export function LanguageSelector({lang}: {lang: Lang}) {
       tabIndex={0}
     >
       <div className="relative">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="
-            w-12 h-12 rounded-full
-            flex items-center justify-center
+        <div
+          className={`
+            w-12 rounded-full
             bg-white/50 backdrop-blur-sm
-            hover:bg-white/70 transition-all duration-200
-            focus:outline-none
-          "
+            flex flex-col items-center
+            transition-all duration-300 ease-out
+            ${isOpen ? 'h-36' : 'h-12'}
+            shadow-lg
+            overflow-hidden
+          `}
         >
-          <span className="text-2xl">{currentLanguage.flag}</span>
-        </button>
-
-        {isOpen && (
-          <div
+          <button
+            onClick={() => setIsOpen(!isOpen)}
             className="
-              absolute top-full right-0 mt-2
-              bg-white/50 backdrop-blur-sm
-              rounded-lg shadow-lg
-              overflow-hidden
-              transition-all duration-300
+              w-full h-12
+              flex items-center justify-center
+              focus:outline-none
+              relative
             "
+          >
+            <span className="relative text-2xl">{currentLanguage.flag}</span>
+          </button>
+
+          <div
+            className={`
+              flex flex-col items-center
+              w-full
+              transition-all duration-300 ease-out
+              overflow-hidden
+              ${isOpen
+                ? 'opacity-100 translate-y-0 visible'
+                : 'opacity-0 -translate-y-2 invisible'}
+            `}
           >
             {otherLanguages.map((language) => (
               <button
                 key={language.code}
                 onClick={() => changeLanguage(language.code)}
                 className="
-                  w-full px-4 py-2
-                  text-left hover:bg-gray-100
-                  flex items-center space-x-2
+                  w-full h-12
+                  flex items-center justify-center
+                  hover:bg-gray-100/30 rounded-full
                   transition-colors duration-200
                 "
               >
-                <span className="text-xl">{language.flag}</span>
-                <span>{language.name}</span>
+                <span className="text-2xl">{language.flag}</span>
               </button>
             ))}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
