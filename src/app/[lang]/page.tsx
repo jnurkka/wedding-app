@@ -69,6 +69,7 @@ export default async function PrivatePage({
       submitRegistration={submitRegistration}
       email={userData.user.email}
       dict={dictionary}
+      lang={lang}
     />
   );
 }
