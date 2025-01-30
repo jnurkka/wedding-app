@@ -11,17 +11,21 @@ import { TravelInfo } from "../components/sections/TravelInfo";
 import { Registration } from "../data";
 import { NavigationDots } from "../components/NavigationDots";
 import { Dictionary } from "../[lang]/types";
+import { Lang } from "../[lang]/dictionaries";
+import { LanguageSelector } from "../components/LanguageSelector";
 
 export const SaveTheDate = ({
   registration,
   submitRegistration,
   email,
   dict,
+  lang,
 }: {
   registration: Registration | null;
   submitRegistration: (registration: Registration) => Promise<string>;
   email: string;
   dict: Dictionary;
+  lang: Lang;
 }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -59,6 +63,7 @@ export const SaveTheDate = ({
   return (
     <>
       <NavigationDots sections={sectionIds} />
+      <LanguageSelector lang={lang} />
       <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll relative">
         <Landing start="19.09." end="21.09.2025" />
         <Program dict={dict} />
