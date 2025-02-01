@@ -62,7 +62,7 @@ export function LanguageSelector({lang}: {lang: Lang}) {
               overflow-hidden
               ${isOpen
                 ? 'opacity-100 translate-y-0 visible'
-                : 'opacity-0 -translate-y-2 invisible'}
+                : 'opacity-0 -translate-y-2 invisible h-0'}
             `}
           >
             {otherLanguages.map((language) => (
