@@ -14,6 +14,7 @@ import { Dictionary } from "../[lang]/types";
 import { Lang } from "../[lang]/dictionaries";
 import { LanguageSelector } from "../components/LanguageSelector";
 import { Questions } from "../components/sections/Questions";
+import { Contact } from "../components/sections/Contact";
 
 export const SaveTheDate = ({
   registration,
@@ -60,6 +61,7 @@ export const SaveTheDate = ({
     "budget",
     "response",
     "faq",
+    "contact",
   ];
 
   return (
@@ -80,6 +82,7 @@ export const SaveTheDate = ({
           dict={dict}
         />
         <Questions dict={dict} />
+        <Contact dict={dict} />
       </div>
     </>
   );

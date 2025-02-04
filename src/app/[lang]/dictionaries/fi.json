@@ -87,5 +87,38 @@
         "answer": "Emme kaipaa muuta lahjaa kuin paikallaolosi! Jos haluat siitä huolimatta jotain lahjoittaa, toivomme tukea häämatkakassaamme."
       }
     ]
+  },
+  "contact": {
+    "title": "Yhteystiedot",
+    "persons": [
+      {
+        "name": "Jaakko",
+        "telephone": "+49 157 7047 6964",
+        "link": "https://wa.me/4915770476964"
+      },
+      {
+        "name": "Jasmin",
+        "telephone": "+49 151 5948 0817",
+        "link": "https://wa.me/4915159480817"
+      },
+      {
+        "title": "🤡 Seremoniamestari",
+        "name": "Ankur Batra",
+        "telephone": "+49 176 2480 1712",
+        "link": "https://wa.me/4917624801712"
+      },
+      {
+        "title": "💃 Kaaso",
+        "name": "Julia Balint",
+        "telephone": "+49 176 3251 4695",
+        "link": "https://wa.me/4917632514695"
+      },
+      {
+        "title": "🕺 Bestman",
+        "name": "Julian Nast-Kolb",
+        "telephone": "+49 151 5560 8181",
+        "link": "https://wa.me/4915155608181"
+      }
+    ]
   }
 }
