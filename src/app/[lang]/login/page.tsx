@@ -29,7 +29,7 @@ export default async function LoginPage({
   const dict = await getDictionary(lang);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
       <LanguageSelector lang={lang} />
       <LoginFormComponent submit={submitLogin} dict={dict} />
     </div>
