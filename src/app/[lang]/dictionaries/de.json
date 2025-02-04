@@ -70,5 +70,22 @@
     "check_email_title": "Prüfe deine Email",
     "check_email_message": "Wir haben dir einen Magic Link per Email geschickt. Klicke den Link im Email, um dich einzuloggen.",
     "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "questions": [
+      {
+        "question": "Was ist der Dresscode?",
+        "answer": "Fetlich und schick, aber du kannst alles tragen, was du willst!"
+      },
+      {
+        "question": "Gibt es Zeit für Performances / Reden?",
+        "answer": "Ja, bitte kontaktiere unseren Trauzeugen oder Trauzeugin, wenn du eine Performance oder einen Vortrag halten möchtest."
+      },
+      {
+        "question": "Was wünscht ihr euch als Geschenk?",
+        "answer": "Wir wünschen uns kein anderes Geschenk als eure Anwesenheit. Wenn du uns trotzdem etwas schenken möchtest, würden wir uns sehr freuen, wenn du einen Beitrag zu unserer Hochzeitsreise spenden würdest."
+      }
+    ]
   }
 }

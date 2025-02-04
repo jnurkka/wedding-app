@@ -70,5 +70,22 @@
     "check_email_title": "Tarkista sähköpostisi",
     "check_email_message": "Lahetimme sinulle magic linkin sähköpostiosoitteeseesi. Klikkaa linkkiä kirjautuaksesi sisään.",
     "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä sähköpostistasi, tarkista myös spam-kansio."
+  },
+  "faq": {
+    "title": "Usein kysytyt kysymykset",
+    "questions": [
+      {
+        "question": "Mikä on pukukoodi?",
+        "answer": "Juhlallisen rento, mutta voit pukeutua niinkuin hyvältä tuntuu!"
+      },
+      {
+        "question": "Onko aikaa esityksiin / puheisiin?",
+        "answer": "Kyllä, ota yhteyttä bestmaniin tai kaasoon jos haluat pitää puheenvuoron tai esityksen."
+      },
+      {
+        "question": "Mitä toivotte lahjaksi?",
+        "answer": "Emme kaipaa muuta lahjaa kuin paikallaolosi! Jos haluat siitä huolimatta jotain lahjoittaa, toivomme tukea häämatkakassaamme."
+      }
+    ]
   }
 }

@@ -13,6 +13,7 @@ import { NavigationDots } from "../components/NavigationDots";
 import { Dictionary } from "../[lang]/types";
 import { Lang } from "../[lang]/dictionaries";
 import { LanguageSelector } from "../components/LanguageSelector";
+import { Questions } from "../components/sections/Questions";
 
 export const SaveTheDate = ({
   registration,
@@ -58,6 +59,7 @@ export const SaveTheDate = ({
     "travel-info",
     "budget",
     "response",
+    "faq",
   ];
 
   return (
@@ -77,6 +79,7 @@ export const SaveTheDate = ({
           email={email}
           dict={dict}
         />
+        <Questions dict={dict} />
       </div>
     </>
   );
