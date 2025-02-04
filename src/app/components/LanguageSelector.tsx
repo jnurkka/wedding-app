@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
-import { Lang } from '../[lang]/dictionaries';
+import React, { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { Lang } from "../[lang]/dictionaries";
 
 const LANGUAGES = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fi', name: 'Suomi', flag: '🇫🇮' }
+  { code: "en", name: "English", flag: "🇬🇧" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "fi", name: "Suomi", flag: "🇫🇮" },
 ];
 
-export function LanguageSelector({lang}: {lang: Lang}) {
+export function LanguageSelector({ lang }: { lang: Lang }) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -21,8 +21,9 @@ export function LanguageSelector({lang}: {lang: Lang}) {
     setIsOpen(false);
   };
 
-  const currentLanguage = LANGUAGES.find(l => l.code === lang) || LANGUAGES[0];
-  const otherLanguages = LANGUAGES.filter(l => l.code !== lang);
+  const currentLanguage =
+    LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
+  const otherLanguages = LANGUAGES.filter((l) => l.code !== lang);
 
   return (
     <div
@@ -37,7 +38,7 @@ export function LanguageSelector({lang}: {lang: Lang}) {
             bg-white/50 backdrop-blur-sm
             flex flex-col items-center
             transition-all duration-300 ease-out
-            ${isOpen ? 'h-36' : 'h-12'}
+            ${isOpen ? "h-36" : "h-12"}
             shadow-lg
             overflow-hidden
           `}
@@ -60,9 +61,11 @@ export function LanguageSelector({lang}: {lang: Lang}) {
               w-full
               transition-all duration-300 ease-out
               overflow-hidden
-              ${isOpen
-                ? 'opacity-100 translate-y-0 visible'
-                : 'opacity-0 -translate-y-2 invisible h-0'}
+              ${
+                isOpen
+                  ? "opacity-100 translate-y-0 visible"
+                  : "opacity-0 -translate-y-2 invisible h-0"
+              }
             `}
           >
             {otherLanguages.map((language) => (

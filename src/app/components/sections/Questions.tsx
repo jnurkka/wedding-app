@@ -11,7 +11,7 @@ export const Questions = ({ dict }: { dict: Dictionary }) => {
       <CardContainer cols={1}>
         {dict.faq.questions.map(({ question, answer }) => (
           <Card key={question}>
-            <CardTitle value={question}/>
+            <CardTitle value={question} />
             <p>{answer}</p>
           </Card>
         ))}

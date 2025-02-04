@@ -3,7 +3,7 @@
 import React, { Suspense, useState } from "react";
 import { SectionContainer } from "../SectionContainer";
 import { SectionTitle } from "../SectionTitle";
-import { Card, CardTitle } from "../Card";
+import { Card } from "../Card";
 import { Registration } from "@/app/data";
 import { Dictionary } from "@/app/[lang]/types";
 
@@ -39,7 +39,7 @@ export const Response = ({
         comment: data.get("comment") as string,
       });
       setSubmitMessage(dict.rsvp.success);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
       setSubmitMessage(dict.error.message);
     } finally {
