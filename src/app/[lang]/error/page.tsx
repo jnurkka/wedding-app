@@ -16,9 +16,7 @@ export default async function ErrorPage({
     <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
       <LanguageSelector lang={lang} />
       <Card>
-        <h1 className="text-4xl text-red-600 mb-4">
-          {dict.error.title}
-        </h1>
+        <h1 className="text-4xl text-red-600 mb-4">{dict.error.title}</h1>
         <p className="text-lg text-[#4A4238] mb-6">{dict.error.message}</p>
         <Link
           href="/"

@@ -27,10 +27,7 @@ export const Accommodation = ({ dict }: { dict: Dictionary }) => {
           </div>
           <p className="text-sm">
             {dict.accommodation.contact}
-            <a
-              href="tel:+49 8431 90766 0"
-              className="hover:underline"
-            >
+            <a href="tel:+49 8431 90766 0" className="hover:underline">
               +49 8431 90766 0
             </a>
           </p>
