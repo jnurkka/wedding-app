@@ -2,6 +2,7 @@ import React from "react";
 import { submit } from "@/app/[lang]/login/actions";
 import { LoginFormComponent } from "./components/form";
 import { getDictionary, Lang } from "../dictionaries";
+import { LanguageSelector } from "../../components/LanguageSelector";
 
 async function submitLogin(email: string): Promise<string> {
   "use server";
@@ -29,6 +30,7 @@ export default async function LoginPage({
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <LanguageSelector lang={lang} />
       <LoginFormComponent submit={submitLogin} dict={dict} />
     </div>
   );
