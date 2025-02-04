@@ -61,8 +61,7 @@ export const Response = ({
       <SectionContainer id="response" bgColor="#E6D2C3">
         <SectionTitle value={dict.rsvp.title} />
         <Card>
-          <CardTitle value={dict.rsvp.subtitle} />
-          <form onSubmit={handleSubmit} className="space-y-6 p-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <span className="block text-[#4A4238] text-sm mb-2 text-center md:text-left">
               {`${dict.rsvp.email}: ${email}`}
             </span>
