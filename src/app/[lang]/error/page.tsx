@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Card } from "@/app/components/Card";
 import { getDictionary, Lang } from "../dictionaries";
+import { LanguageSelector } from "../../components/LanguageSelector";
 
 export default async function ErrorPage({
   params,
@@ -13,6 +14,7 @@ export default async function ErrorPage({
   const dict = await getDictionary(lang);
   return (
     <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3]">
+      <LanguageSelector lang={lang} />
       <Card>
         <h1 className="text-4xl font-bold text-red-600 mb-4">
           {dict.error.title}
