@@ -75,6 +75,11 @@
     "check_email_message": "Lahetimme sinulle magic linkin sähköpostiosoitteeseesi. Klikkaa linkkiä kirjautuaksesi sisään.",
     "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä sähköpostistasi, tarkista myös spam-kansio."
   },
+  "register": {
+    "title": "Sähköpostiosoite vahvistettu!",
+    "subtitle": "Olemme vahvistanneet sähköpostiosoitteesi. Voit nyt kirjautua sisään.",
+    "buttonText": "Kirjaudu sisään"
+  },
   "faq": {
     "title": "Usein kysytyt kysymykset",
     "questions": [

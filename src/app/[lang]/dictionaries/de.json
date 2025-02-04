@@ -75,6 +75,11 @@
     "check_email_message": "Wir haben dir einen Magic Link per Email geschickt. Klicke den Link im Email, um dich einzuloggen.",
     "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox."
   },
+  "register": {
+    "title": "Email bestätigt!",
+    "subtitle": "Wir haben deine Email-Adresse bestätigt. Du kannst dich jetzt mit deinem Email einloggen.",
+    "buttonText": "Zum Login"
+  },
   "faq": {
     "title": "Häufig gestellte Fragen",
     "questions": [

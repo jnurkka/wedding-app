@@ -75,6 +75,11 @@
     "check_email_message": "We've sent a magic link to your email address. Click the link to sign in.",
     "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder."
   },
+  "register": {
+    "title": "Email confirmed!",
+    "subtitle": "We have verified your email address. You can now sign in to the wedding website.",
+    "buttonText": "To login"
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "questions": [
