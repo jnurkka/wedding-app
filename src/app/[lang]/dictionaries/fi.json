@@ -65,7 +65,7 @@
     "back": "Takaisin"
   },
   "login": {
-    "title": "Kirjaudu sisään",
+    "title": "Tervetuloa JJ häihin!",
     "subtitle": "Syötä sähköpostiosoitteesi ja lähetämme sinulle magic linkin, jolla voit kirjautua sisään.",
     "email": "Sähköpostiosoite",
     "submit": "Lähetä magic link",
