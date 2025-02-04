@@ -20,7 +20,7 @@ export const Accommodation = ({ dict }: { dict: Dictionary }) => {
           <div className="flex justify-center space-x-4 mt-6">
             <a
               href={`mailto:rezeption@dasacker.de?cc=jaakko+wedding@nurkka.me&subject=${dict.accommodation.reservation.subject}&body=${dict.accommodation.reservation.body}`}
-              className="bg-[#4A4238] text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition-colors"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition-colors"
             >
               {dict.accommodation.book}
             </a>
@@ -29,7 +29,7 @@ export const Accommodation = ({ dict }: { dict: Dictionary }) => {
             {dict.accommodation.contact}
             <a
               href="tel:+49 8431 90766 0"
-              className="text-[#4A4238] hover:underline"
+              className="hover:underline"
             >
               +49 8431 90766 0
             </a>

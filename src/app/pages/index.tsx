@@ -65,7 +65,7 @@ export const SaveTheDate = ({
   ];
 
   return (
-    <>
+    <div className="text-stone-700">
       <NavigationDots sections={sectionIds} />
       <LanguageSelector lang={lang} />
       <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll relative">
@@ -84,6 +84,6 @@ export const SaveTheDate = ({
         <Questions dict={dict} />
         <Contact dict={dict} />
       </div>
-    </>
+    </div>
   );
 };

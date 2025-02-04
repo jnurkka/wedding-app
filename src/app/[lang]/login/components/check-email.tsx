@@ -6,7 +6,7 @@ export const CheckEmailComponent = ({ dict }: { dict: Dictionary }) => {
       <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-16 w-16 mx-auto mb-4 text-indigo-700"
+          className="h-16 w-16 mx-auto mb-4 text-emerald-600"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

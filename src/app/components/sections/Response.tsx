@@ -157,7 +157,7 @@ export const Response = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full max-w-xs mx-auto bg-[#4A4238] text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition-colors disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-[#4A4238] focus:ring-opacity-50"
+                className="w-full max-w-xs mx-auto bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg transition-colors disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-[#4A4238] focus:ring-opacity-50"
               >
                 {isSubmitting ? dict.rsvp.submitting : submitText}
               </button>
