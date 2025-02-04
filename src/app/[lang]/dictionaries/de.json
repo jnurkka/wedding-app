@@ -24,7 +24,11 @@
     "cancel": "Die Reservierung kann bis zu zwei Wochen vor der Feier kostenlos storniert werden.",
     "book": "Zimmer per Email reservieren",
     "contact": "Du kannst das Hotel auch direkt telefonisch kontaktieren: ",
-    "alternative": "Du kannst selbstverständlich auch eine alternative Unterkunft wählen. Wir bitten nur uns darüber im RSVP zu informieren, damit wir das Hotel entsprechend informieren können."
+    "alternative": "Du kannst selbstverständlich auch eine alternative Unterkunft wählen. Wir bitten nur uns darüber im RSVP zu informieren, damit wir das Hotel entsprechend informieren können.",
+    "reservation": {
+      "subject": "Jasmin%20%26%20Jaakko%20Hochzeit%20Buchung",
+      "body": "Bitte%20passe%20diese%20E-Mail%20nach%20deinen%20Bed%C3%BCrfnissen%20an%20%E2%80%93%20das%20Hotel%20geh%C3%B6rt%20zur%20gleichen%20Firma%2C%20die%20uns%20bei%20der%20Organisation%20der%20Hochzeit%20hilft.%20Sie%20werden%20dich%20gerne%20weiterhelfen.%0A%0A---%0A%0ALiebes%20Acker%20Hotel%20Team%2C%0A%0AIch%20m%C3%B6chte%20gerne%20ein%20Zimmer%20f%C3%BCr%20die%20Hochzeit%20von%20Jasmin%20und%20Jaakko%20am%2020.%20September%202025%20mit%20folgenden%20Anforderungen%20buchen%3A%0A%0APersonen%3A%202%0AN%C3%A4chte%3A%202%0A%0ABitte%20best%C3%A4tigen%20Sie%20die%20Reservierung%20per%20E-Mail.%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%2C%0A%0A---%0A%0ADiese%20E-Mail%20wurde%20automatisch%20mit%20einer%20Vorlage%20von%20Jaakko%20%26%20Jasmin%20erstellt.%20Sollten%20Probleme%20mit%20der%20E-Mail%20auftreten%2C%20wenden%20Sie%20sich%20bitte%20per%20E-Mail%20an%20Jaakko%20(jaakko%40nurkka.me)."
+    }
   },
   "travelInfo": {
     "title": "Anreise"
