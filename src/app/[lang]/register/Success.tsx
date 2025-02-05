@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { Dictionary } from "../types";
 
-export const RegistrationSuccess = ({ dict, email }: { dict: Dictionary; email?: string }) => {
+export const RegistrationSuccess = ({
+  dict,
+  email,
+}: {
+  dict: Dictionary;
+  email?: string;
+}) => {
   const linkToLogin = email ? `/login?email=${email}` : "/login";
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">

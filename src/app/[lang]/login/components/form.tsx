@@ -6,7 +6,7 @@ import { CheckEmailComponent } from "./check-email";
 export const LoginFormComponent = ({
   submit,
   dict,
-  prefilledEmail
+  prefilledEmail,
 }: {
   submit: (email: string) => Promise<string>;
   dict: Dictionary;

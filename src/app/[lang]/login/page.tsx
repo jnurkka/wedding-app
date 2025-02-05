@@ -33,7 +33,11 @@ export default async function LoginPage({
   return (
     <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
       <LanguageSelector lang={lang} />
-      <LoginFormComponent submit={submitLogin} dict={dict} prefilledEmail={email} />
+      <LoginFormComponent
+        submit={submitLogin}
+        dict={dict}
+        prefilledEmail={email}
+      />
     </div>
   );
 }
