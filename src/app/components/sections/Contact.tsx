@@ -23,6 +23,9 @@ export const Contact = ({ dict }: { dict: Dictionary }) => {
           </Card>
         ))}
       </CardContainer>
+      <footer className="absolute bottom-0 w-full py-2 text-center text-sm text-stone-900">
+        Built with ❤️ (and a bit of AI) by Jaakko
+      </footer>
     </SectionContainer>
   );
 };
