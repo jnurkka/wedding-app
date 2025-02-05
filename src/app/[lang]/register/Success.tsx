@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Dictionary } from "../types";
 
-export const RegistrationSuccess = ({ dict }: { dict: Dictionary }) => {
+export const RegistrationSuccess = ({ dict, email }: { dict: Dictionary; email?: string }) => {
+  const linkToLogin = email ? `/login?email=${email}` : "/login";
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">
       <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
@@ -23,7 +24,7 @@ export const RegistrationSuccess = ({ dict }: { dict: Dictionary }) => {
           {dict.register.title}
         </h2>
         <p className="text-gray-600 mb-6">{dict.register.subtitle}</p>
-        <Link href="/login">
+        <Link href={linkToLogin}>
           <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md">
             {dict.register.buttonText}
           </button>

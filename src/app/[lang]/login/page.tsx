@@ -22,16 +22,18 @@ async function submitLogin(email: string): Promise<string> {
 
 export default async function LoginPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ lang: Lang }>;
+  searchParams: Promise<{ email?: string }>;
 }) {
   const lang = (await params).lang;
   const dict = await getDictionary(lang);
-
+  const email = (await searchParams).email;
   return (
     <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
       <LanguageSelector lang={lang} />
-      <LoginFormComponent submit={submitLogin} dict={dict} />
+      <LoginFormComponent submit={submitLogin} dict={dict} prefilledEmail={email} />
     </div>
   );
 }

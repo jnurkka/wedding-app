@@ -6,9 +6,11 @@ import { CheckEmailComponent } from "./check-email";
 export const LoginFormComponent = ({
   submit,
   dict,
+  prefilledEmail
 }: {
   submit: (email: string) => Promise<string>;
   dict: Dictionary;
+  prefilledEmail?: string;
 }) => {
   const [error, setError] = React.useState<string | null>(null);
   const [emailSent, setEmailSent] = React.useState<boolean>(false);
@@ -54,6 +56,7 @@ export const LoginFormComponent = ({
                   required
                   className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-stone-600 text-stone-800 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-emerald-500 sm:text-sm bg-gray-50"
                   placeholder={dict.login.email}
+                  defaultValue={prefilledEmail}
                 />
               </div>
             </div>
