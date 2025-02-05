@@ -74,7 +74,10 @@
     "rate_limit_exceeded": "Too many attempts. Please try again later.",
     "check_email_title": "Check Your Email",
     "check_email_message": "We've sent a magic link to your email address. Click the link to sign in.",
-    "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder."
+    "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder.",
+    "password_info": "Your email is not yet registered. Please enter the password we shared with you to register.",
+    "password": "Password",
+    "wrong_password": "Wrong password. Please try again or ask us for the password."
   },
   "register": {
     "title": "Email verified!",

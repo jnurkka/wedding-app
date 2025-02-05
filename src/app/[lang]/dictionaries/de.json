@@ -74,7 +74,10 @@
     "rate_limit_exceeded": "Zu viele Versuche. Versuche es später erneut.",
     "check_email_title": "Prüfe deine Email",
     "check_email_message": "Wir haben dir einen Magic Link per Email geschickt. Klicke den Link im Email, um dich einzuloggen.",
-    "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox."
+    "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox.",
+    "password_info": "Deine Email ist noch nicht registriert. Bitte gib das Passwort ein, das wir dir mitgeteilt haben, um dich zu registrieren.",
+    "password": "Passwort",
+    "wrong_password": "Falsches Passwort. Bitte versuche es erneut oder frage uns nochmal danach."
   },
   "register": {
     "title": "Email bestätigt!",

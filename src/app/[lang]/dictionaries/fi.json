@@ -74,7 +74,10 @@
     "rate_limit_exceeded": "Liian monta yritystä. Yritä myöhemmin uudelleen.",
     "check_email_title": "Tarkista sähköpostisi",
     "check_email_message": "Lahetimme sinulle magic linkin sähköpostiosoitteeseesi. Klikkaa linkkiä kirjautuaksesi sisään.",
-    "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä sähköpostistasi, tarkista myös spam-kansio."
+    "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä, tarkista myös roskapostikansio.",
+    "password_info": "Sähköpostiosoite ei ole vielä rekisteröity. Syötä salasana jonka sait meiltä rekisteröityäksesi.",
+    "password": "Salasana",
+    "wrong_password": "Väärä salasana. Yritä uudelleen tai pyydä meiltä salasanaa."
   },
   "register": {
     "title": "Sähköpostiosoite vahvistettu!",

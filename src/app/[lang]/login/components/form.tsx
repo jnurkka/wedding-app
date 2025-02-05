@@ -8,30 +8,33 @@ export const LoginFormComponent = ({
   dict,
   prefilledEmail,
 }: {
-  submit: (email: string) => Promise<string>;
+  submit: (email: string, password?: string) => Promise<string>;
   dict: Dictionary;
   prefilledEmail?: string;
 }) => {
   const [error, setError] = React.useState<string | null>(null);
   const [emailSent, setEmailSent] = React.useState<boolean>(false);
+  const [askForPassword, setAskForPassword] = React.useState<boolean>(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError(null);
+    setEmailSent(false);
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
-    const status = await submit(email);
+    const password = askForPassword === true ? formData.get("password") as string : undefined;
+    const status = await submit(email, password);
     if (status === "success") {
-      setError(null);
+      setAskForPassword(false);
       setEmailSent(true);
     } else if (status === "signups-not-allowed") {
-      setError(dict.login.not_invited);
-      setEmailSent(false);
+      setAskForPassword(true);
     } else if (status === "rate-limit-exceeded") {
       setError(dict.login.rate_limit_exceeded);
-      setEmailSent(false);
     } else if (status === "unknown-error") {
       setError(dict.error.message);
-      setEmailSent(false);
+    } else if (status === "wrong-password") {
+      setError(dict.login.wrong_password);
     }
   };
   if (emailSent) {
@@ -60,6 +63,21 @@ export const LoginFormComponent = ({
                 />
               </div>
             </div>
+            {askForPassword && (
+              <div>
+                <p className="text-sm text-gray-500 mb-2">
+                  {dict.login.password_info}
+                </p>
+                <input
+                  id="password"
+                  name="password"
+                  type="text"
+                  required
+                  className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-stone-600 text-stone-800 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-emerald-500 sm:text-sm bg-gray-50"
+                  placeholder={dict.login.password}
+                />
+              </div>
+            )}
             {error !== null && (
               <div
                 className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"

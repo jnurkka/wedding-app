@@ -4,14 +4,16 @@ import { LoginFormComponent } from "./components/form";
 import { getDictionary, Lang } from "../dictionaries";
 import { LanguageSelector } from "../../components/LanguageSelector";
 
-async function submitLogin(email: string): Promise<string> {
+async function submitLogin(email: string, password?: string): Promise<string> {
   "use server";
-  const response = await submit(email);
+  const response = await submit(email, password);
   if (response.status === "error") {
     if (response.error === "Signups not allowed for otp") {
       return "signups-not-allowed";
     } else if (response.error === "email rate limit exceeded") {
       return "rate-limit-exceeded";
+    } else if (response.error === "wrong-password") {
+      return "wrong-password";
     } else {
       return "unknown-error";
     }
