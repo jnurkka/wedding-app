@@ -29,29 +29,6 @@ export const SaveTheDate = ({
   dict: Dictionary;
   lang: Lang;
 }) => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-          } else {
-            entry.target.classList.remove("active");
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of the section is visible
-      },
-    );
-
-    // Observe all sections
-    const sections = document.querySelectorAll(".section");
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
-
   const sectionIds = [
     "landing",
     "program",
