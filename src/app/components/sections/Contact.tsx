@@ -9,11 +9,17 @@ export const Contact = ({ dict }: { dict: Dictionary }) => {
     <SectionContainer id="contact" bgColor="#E6D2C3">
       <SectionTitle value={dict.contact.title} color="#4A4238" />
       <CardContainer cols={1}>
-        {dict.contact.persons.map(({ name, title, telephone, link }) => (
+        {dict.contact.groups.map(({ name, people }) => (
           <Card key={name}>
             <CardTitle value={name} />
-            {title && <p>{title}</p>}
-            <a href={link}>{`☎️: ${telephone}`}</a>
+            {people.map(({ name: personName, telephone, link }) => (
+              <p key={personName}>
+                {personName}:{" "}
+                <a className="hover:underline" href={link}>
+                  {telephone}
+                </a>
+              </p>
+            ))}
           </Card>
         ))}
       </CardContainer>

@@ -99,34 +99,36 @@
   },
   "contact": {
     "title": "Kontakt",
-    "persons": [
+    "groups": [
       {
-        "name": "Jaakko",
-        "telephone": "+49 157 7047 6964",
-        "link": "https://wa.me/4915770476964"
+        "name": "Die JJs",
+        "people": [
+          {
+            "name": "🙉 Jaakko",
+            "telephone": "+49 157 7047 6964",
+            "link": "https://wa.me/4915770476964"
+          },
+          {
+            "name": "🙊 Jasmin",
+            "telephone": "+49 151 5948 0817",
+            "link": "https://wa.me/4915159480817"
+          }
+        ]
       },
       {
-        "name": "Jasmin",
-        "telephone": "+49 151 5948 0817",
-        "link": "https://wa.me/4915159480817"
-      },
-      {
-        "title": "🤡 Festmeister",
-        "name": "Ankur Batra",
-        "telephone": "+49 176 2480 1712",
-        "link": "https://wa.me/4917624801712"
-      },
-      {
-        "title": "💃 Trauzeugin",
-        "name": "Julia Balint",
-        "telephone": "+49 176 3251 4695",
-        "link": "https://wa.me/4917632514695"
-      },
-      {
-        "title": "🕺 Trauzeuge",
-        "name": "Julian Nast-Kolb",
-        "telephone": "+49 151 5560 8181",
-        "link": "https://wa.me/4915155608181"
+        "name": "Die anderen JJs",
+        "people": [
+          {
+            "name": "💃 Julia Balint (Trauzeugin)",
+            "telephone": "+49 176 3251 4695",
+            "link": "https://wa.me/4917632514695"
+          },
+          {
+            "name": "🕺 Julian Nast-Kolb (Trauzeuge)",
+            "telephone": "+49 151 5560 8181",
+            "link": "https://wa.me/4915155608181"
+          }
+        ]
       }
     ]
   }
