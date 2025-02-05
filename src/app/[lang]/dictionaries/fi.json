@@ -69,7 +69,7 @@
     "title": "Tervetuloa JJ häihin!",
     "subtitle": "Syötä sähköpostiosoitteesi ja lähetämme sinulle magic linkin, jolla voit kirjautua sisään.",
     "email": "Sähköpostiosoite",
-    "submit": "Lähetä magic link",
+    "submit": "Lähetä",
     "not_invited": "Syöttämääsi sähköpostiosoitetta ei ole kutsuttu häihin. Tarkista antamasi osoite tai ota yhteyttä meihin.",
     "rate_limit_exceeded": "Liian monta yritystä. Yritä myöhemmin uudelleen.",
     "check_email_title": "Tarkista sähköpostisi",

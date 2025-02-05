@@ -69,7 +69,7 @@
     "title": "Willkommen zur JJ Hochzeit!",
     "subtitle": "Gib deine Email-Adresse ein und wir senden dir einen Magic Link zum Einloggen",
     "email": "Deine Email",
-    "submit": "Magic Link senden",
+    "submit": "Absenden",
     "not_invited": "Dieser Email wurde nicht eingeladen. Bitte überprüfe deine Eingabe oder kontaktiere uns, damit wir dich einladen können.",
     "rate_limit_exceeded": "Zu viele Versuche. Versuche es später erneut.",
     "check_email_title": "Prüfe deine Email",
