@@ -76,7 +76,7 @@
     "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder."
   },
   "register": {
-    "title": "Email confirmed!",
+    "title": "Email verified!",
     "subtitle": "We have verified your email address. You can now sign in to the wedding website.",
     "buttonText": "To login"
   },
