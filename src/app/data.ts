@@ -6,4 +6,5 @@ export interface Registration {
   name: string;
   diet: string;
   comment: string;
+  created_at?: string;
 }

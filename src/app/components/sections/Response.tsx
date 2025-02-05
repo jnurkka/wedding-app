@@ -62,11 +62,16 @@ export const Response = ({
         <SectionTitle value={dict.rsvp.title} />
         <Card>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <span className="block text-[#4A4238] text-sm mb-2 text-center md:text-left">
+            <span className="block text-sm mb-2 text-center md:text-left">
               {`${dict.rsvp.email}: ${email}`}
             </span>
+            {registration?.created_at && (
+              <span className="block text-sm mb-2 text-center md:text-left">
+                {`${dict.rsvp.created_at}: ${new Date(registration.created_at).toLocaleDateString()}`}
+              </span>
+            )}
             <div className="grid grid-cols-1 gap-4">
-              <label className="block text-[#4A4238]">
+              <label className="block">
                 <span className="block mb-2 font-semibold">
                   {dict.rsvp.name}
                 </span>
@@ -79,7 +84,7 @@ export const Response = ({
                   required
                 />
               </label>
-              <label className="block text-[#4A4238]">
+              <label className="block ">
                 <span className="block mb-2 font-semibold">
                   {dict.rsvp.people_friday}
                 </span>
@@ -93,7 +98,7 @@ export const Response = ({
                   placeholder={dict.rsvp.people_friday}
                 />
               </label>
-              <label className="block text-[#4A4238]">
+              <label className="block ">
                 <span className="block mb-2 font-semibold">
                   {dict.rsvp.people_saturday}
                 </span>
@@ -112,9 +117,9 @@ export const Response = ({
                   type="checkbox"
                   defaultChecked={registration?.staying_fr}
                   name="staying_fr"
-                  className="form-checkbox text-[#4A4238] transition-all"
+                  className="form-checkbox  transition-all"
                 />
-                <span className="text-left text-[#4A4238] group-hover:text-[#4A4238]/80 transition-colors">
+                <span className="text-left  group-hover:/80 transition-colors">
                   {dict.rsvp.hotel_friday}
                 </span>
               </label>
@@ -123,14 +128,14 @@ export const Response = ({
                   type="checkbox"
                   defaultChecked={registration?.staying_sat}
                   name="staying_sat"
-                  className="form-checkbox text-[#4A4238] transition-all"
+                  className="form-checkbox  transition-all"
                 />
-                <span className="text-left text-[#4A4238] group-hover:text-[#4A4238]/80 transition-colors">
+                <span className="text-left  group-hover:/80 transition-colors">
                   {dict.rsvp.hotel_saturday}
                 </span>
               </label>
             </div>
-            <label className="block text-[#4A4238]">
+            <label className="block ">
               <span className="block mb-2 font-semibold">{dict.rsvp.diet}</span>
               <textarea
                 name="diet"
@@ -140,7 +145,7 @@ export const Response = ({
                 placeholder={dict.rsvp.diet_placeholder}
               />
             </label>
-            <label className="block text-[#4A4238]">
+            <label className="block ">
               <span className="block mb-2 font-semibold">
                 {dict.rsvp.comment}
               </span>
