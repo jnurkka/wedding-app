@@ -15,6 +15,7 @@ export const Location = ({ dict }: { dict: Dictionary }) => (
         <Link
           href="https://maps.app.goo.gl/xt5eNL8YHXWdX9BJ7"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-[#4A4238] text-lg hover:underline flex items-center"
         >
           Am Machinenring, 86633 Neuburg an der Donau
@@ -27,6 +28,7 @@ export const Location = ({ dict }: { dict: Dictionary }) => (
           <Link
             href="https://maps.app.goo.gl/6yNbatiLMjMrRTQ57"
             target="_blank"
+            rel="noopener noreferrer"
             className="ml-1 hover:underline"
           >
             {dict.location.distanceToCity}

@@ -68,6 +68,7 @@ export const TravelInfo = ({ dict }: { dict: Dictionary }) => (
                   <Link
                     href={method.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline flex items-center"
                   >
                     {method.description}
