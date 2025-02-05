@@ -45,6 +45,7 @@
   "rsvp": {
     "title": "Anmeldung",
     "email": "Deine Email",
+    "created_at": "Zuletzt gespeichert",
     "name": "Dein Name",
     "people_friday": "Anzahl Personen (Freitag)",
     "people_saturday": "Anzahl Personen (Samstag)",
@@ -85,11 +86,11 @@
     "questions": [
       {
         "question": "Was ist der Dresscode?",
-        "answer": "Fetlich und schick, aber du kannst alles tragen, was du willst!"
+        "answer": "Freitag gerne in Tracht, falls vorhanden. Samstag dann festlich und schick - Hauptsache ihr fühlt euch wohl."
       },
       {
         "question": "Gibt es Zeit für Aufführungen / Reden?",
-        "answer": "Ja, bitte kontaktiere unseren Trauzeugen oder Trauzeugin, wenn du eine Performance oder einen Vortrag halten möchtest."
+        "answer": "Ja, bitte kontaktiere unsere TrauzeugInnen, wenn du eine Performance oder einen Vortrag halten möchtest."
       },
       {
         "question": "Was wünscht ihr euch als Geschenk?",

@@ -45,6 +45,7 @@
   "rsvp": {
     "title": "Ilmoittautuminen",
     "email": "Sähköpostiosoite",
+    "created_at": "Viimeksi tallennettu",
     "name": "Nimi",
     "people_friday": "Henkilömäärä (Perjantai)",
     "people_saturday": "Henkilömäärä (Lauantai)",
@@ -85,7 +86,7 @@
     "questions": [
       {
         "question": "Mikä on pukukoodi?",
-        "answer": "Juhlallisen rento, mutta voit pukeutua niinkuin hyvältä tuntuu!"
+        "answer": "Perjantaina Oktoberfest-teemainen, lauataina rennon juhlallinen."
       },
       {
         "question": "Onko aikaa esityksiin / puheisiin?",

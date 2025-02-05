@@ -45,6 +45,7 @@
   "rsvp": {
     "title": "Registration",
     "email": "Your email",
+    "created_at": "Response saved at",
     "name": "Your name",
     "people_friday": "Number of people (Friday)",
     "people_saturday": "Number of people (Saturday)",
@@ -85,7 +86,7 @@
     "questions": [
       {
         "question": "What is the dress code?",
-        "answer": "Semi-formal, but you can wear whatever you want!"
+        "answer": "On Friday Oktoberfest-themed. On Saturday semi-formal / festive - wear whatever you feel comfortable in!"
       },
       {
         "question": "Is there time for performances / speeches?",
