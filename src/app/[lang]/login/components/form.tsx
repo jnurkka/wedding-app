@@ -22,7 +22,10 @@ export const LoginFormComponent = ({
     setEmailSent(false);
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
-    const password = askForPassword === true ? formData.get("password") as string : undefined;
+    const password =
+      askForPassword === true
+        ? (formData.get("password") as string)
+        : undefined;
     const status = await submit(email, password);
     if (status === "success") {
       setAskForPassword(false);

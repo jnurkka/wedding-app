@@ -13,7 +13,10 @@ interface ErrorResponse {
 
 type Response = SuccessResonse | ErrorResponse;
 
-export async function submit(email: string, password?: string): Promise<Response> {
+export async function submit(
+  email: string,
+  password?: string,
+): Promise<Response> {
   const supabase = await createClient();
   if (password !== undefined) {
     if (password === process.env.SHARED_SECRET) {
