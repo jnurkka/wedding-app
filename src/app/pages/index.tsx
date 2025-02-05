@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { Accommodation } from "../components/sections/Accomodation";
 import { Budget } from "../components/sections/Budget";
 import { Landing } from "../components/sections/Landing";
