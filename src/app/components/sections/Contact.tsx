@@ -15,7 +15,7 @@ export const Contact = ({ dict }: { dict: Dictionary }) => {
             {people.map(({ name: personName, telephone, link }) => (
               <p key={personName}>
                 {personName}:{" "}
-                <a className="hover:underline" href={link}>
+                <a className="hover:underline" href={link} target="_blank" rel="noopener noreferrer">
                   {telephone}
                 </a>
               </p>
