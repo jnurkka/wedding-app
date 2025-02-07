@@ -50,7 +50,7 @@ export const LoginFormComponent = ({
       </h2>
       <p className="mt-2 text-center text-sm">{dict.login.subtitle}</p>
       <div className="mt-8">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-white py-8 px-4 shadow rounded-md sm:px-10">
           <form onSubmit={onSubmit} className="space-y-6">
             <div>
               <div className="mt-1">

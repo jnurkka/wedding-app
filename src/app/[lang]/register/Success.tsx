@@ -11,7 +11,7 @@ export const RegistrationSuccess = ({
   const linkToLogin = email ? `/login?email=${email}` : "/login";
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">
-      <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10 text-center">
+      <div className="bg-white py-8 px-4 shadow rounded-md sm:px-10 text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-16 w-16 mx-auto mb-4 text-emerald-600"
