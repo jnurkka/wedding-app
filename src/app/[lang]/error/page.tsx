@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Card } from "@/app/components/Card";
 import { getDictionary, Lang } from "../dictionaries";
 import { LanguageSelector } from "../../components/LanguageSelector";
+import { OnePageContainer } from "@/app/components/OnePageContainer";
 
 export default async function ErrorPage({
   params,
@@ -13,7 +14,7 @@ export default async function ErrorPage({
   const lang = (await params).lang;
   const dict = await getDictionary(lang);
   return (
-    <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
+    <OnePageContainer>
       <LanguageSelector lang={lang} />
       <Card>
         <h1 className="text-4xl text-red-600 mb-4">{dict.error.title}</h1>
@@ -37,6 +38,6 @@ export default async function ErrorPage({
           {dict.error.back}
         </Link>
       </Card>
-    </div>
+    </OnePageContainer>
   );
 }

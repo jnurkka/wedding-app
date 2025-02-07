@@ -3,6 +3,7 @@ import { submit } from "@/app/[lang]/login/actions";
 import { LoginFormComponent } from "./components/form";
 import { getDictionary, Lang } from "../dictionaries";
 import { LanguageSelector } from "../../components/LanguageSelector";
+import { OnePageContainer } from "@/app/components/OnePageContainer";
 
 async function submitLogin(email: string, password?: string): Promise<string> {
   "use server";
@@ -33,13 +34,13 @@ export default async function LoginPage({
   const dict = await getDictionary(lang);
   const email = (await searchParams).email;
   return (
-    <div className="relative h-screen w-screen items-center flex flex-col justify-center p-8 bg-[#E6D2C3] text-stone-700">
+    <OnePageContainer>
       <LanguageSelector lang={lang} />
       <LoginFormComponent
         submit={submitLogin}
         dict={dict}
         prefilledEmail={email}
       />
-    </div>
+    </OnePageContainer>
   );
 }
