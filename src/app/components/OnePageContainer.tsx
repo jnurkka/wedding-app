@@ -1,4 +1,8 @@
-export const OnePageContainer = ({ children }: { children: React.ReactNode }) => {
+export const OnePageContainer = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <div className="relative min-h-screen w-screen overflow-hidden">
       <div className="absolute inset-0 bg-[#E6D2C3]">

@@ -6,6 +6,7 @@ import { SectionTitle } from "../SectionTitle";
 import { Card } from "../Card";
 import { Registration } from "@/app/data";
 import { Dictionary } from "@/app/[lang]/types";
+import { SubmitButton } from "@/app/components/SubmitButton";
 
 export const Response = ({
   registration,
@@ -157,17 +158,6 @@ export const Response = ({
                 placeholder={dict.rsvp.comment_placeholder}
               />
             </label>
-
-            <div className="text-center">
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full max-w-xs mx-auto bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg transition-colors disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-[#4A4238] focus:ring-opacity-50"
-              >
-                {isSubmitting ? dict.rsvp.submitting : submitText}
-              </button>
-            </div>
-
             {submitMessage && (
               <p
                 className={`mt-4 text-center ${submitMessage.includes("error") ? "text-red-500" : "text-green-500"}`}
@@ -175,6 +165,13 @@ export const Response = ({
                 {submitMessage}
               </p>
             )}
+            <div className="text-center">
+              <SubmitButton
+                isLoading={isSubmitting}
+                text={submitText}
+                disabled={isSubmitting}
+              />
+            </div>
           </form>
         </Card>
       </SectionContainer>

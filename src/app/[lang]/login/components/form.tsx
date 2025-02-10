@@ -2,6 +2,7 @@
 import React from "react";
 import { Dictionary } from "../../types";
 import { CheckEmailComponent } from "./check-email";
+import { SubmitButton } from "@/app/components/SubmitButton";
 
 export const LoginFormComponent = ({
   submit,
@@ -15,11 +16,13 @@ export const LoginFormComponent = ({
   const [error, setError] = React.useState<string | null>(null);
   const [emailSent, setEmailSent] = React.useState<boolean>(false);
   const [askForPassword, setAskForPassword] = React.useState<boolean>(false);
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
     setEmailSent(false);
+    setIsLoading(true);
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email") as string;
     const password =
@@ -39,6 +42,7 @@ export const LoginFormComponent = ({
     } else if (status === "wrong-password") {
       setError(dict.login.wrong_password);
     }
+    setIsLoading(false);
   };
   if (emailSent) {
     return <CheckEmailComponent dict={dict} />;
@@ -90,12 +94,11 @@ export const LoginFormComponent = ({
               </div>
             )}
             <div>
-              <button
-                type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-              >
-                {dict.login.submit}
-              </button>
+              <SubmitButton
+                isLoading={isLoading}
+                text={dict.login.submit}
+                disabled={isLoading}
+              />
             </div>
           </form>
         </div>
