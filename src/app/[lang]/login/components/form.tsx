@@ -23,26 +23,31 @@ export const LoginFormComponent = ({
     setError(null);
     setEmailSent(false);
     setIsLoading(true);
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get("email") as string;
-    const password =
-      askForPassword === true
-        ? (formData.get("password") as string)
-        : undefined;
-    const status = await submit(email, password);
-    if (status === "success") {
-      setAskForPassword(false);
-      setEmailSent(true);
-    } else if (status === "signups-not-allowed") {
-      setAskForPassword(true);
-    } else if (status === "rate-limit-exceeded") {
-      setError(dict.login.rate_limit_exceeded);
-    } else if (status === "unknown-error") {
-      setError(dict.error.message);
-    } else if (status === "wrong-password") {
-      setError(dict.login.wrong_password);
+    try {
+      const formData = new FormData(e.currentTarget);
+      const email = formData.get("email") as string;
+      const password =
+        askForPassword === true
+          ? (formData.get("password") as string)
+          : undefined;
+      const status = await submit(email, password);
+      if (status === "success") {
+        setAskForPassword(false);
+        setEmailSent(true);
+      } else if (status === "signups-not-allowed") {
+        setAskForPassword(true);
+      } else if (status === "rate-limit-exceeded") {
+        setError(dict.login.rate_limit_exceeded);
+      } else if (status === "unknown-error") {
+        setError(dict.error.message);
+      } else if (status === "wrong-password") {
+        setError(dict.login.wrong_password);
+      }
+    } catch (error) {
+      setError(error instanceof Error ? error.message : dict.error.message);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
   };
   if (emailSent) {
     return <CheckEmailComponent dict={dict} />;
