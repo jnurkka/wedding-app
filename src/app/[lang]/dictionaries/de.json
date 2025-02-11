@@ -20,7 +20,7 @@
   },
   "accommodation": {
     "title": "Übernachtung",
-    "price": "Wir haben ein Kontingent für alle Gäste im Acker Hotel direkt neben der Location der Feier für einen Preis von 144€ pro Nacht für ein Doppelzimmer inklusive Fruhstück. Ihr müsstet nur euer eigenes Zimmer selbst reservieren.",
+    "price": "Wir haben ein Kontingent für alle Gäste im Acker Hotel direkt neben der Location der Feier für einen Preis von 144€ pro Nacht für ein Doppelzimmer inklusive Fruhstück vorgemerkt. Ihr müsstet nur euer eigenes Zimmer selbst reservieren.",
     "cancel": "Die Reservierung kann bis zu zwei Wochen vor der Feier kostenlos storniert werden.",
     "book": "Zimmer per Email reservieren",
     "contact": "Du kannst das Hotel auch direkt telefonisch kontaktieren: ",
@@ -35,9 +35,9 @@
   },
   "budget": {
     "title": "Budget",
-    "subtitle": "Wichtige Erwägungen",
+    "subtitle": "Wichtige Informationen",
     "description": "Wir verstehen, dass für viele alleine die Teilnahme ein signifikantes finanzielles Investment ist. Wir wollten das ganze Wochenende feiern, damit die lange Anreise sich lohnt und wollen transparent jeden über die zu erwartenden Kosten informieren.",
-    "friday": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle, alle sonstigen Getränke und Essen soll jeder selbst zahlen.",
+    "friday": "🍻 Freitag: Wir übernehmen den Eintritt und Bayrische Brotzeitbrettl für alle. Alle sonstigen Getränke und Essen bitten wir jeden selbst zu zahlen.",
     "saturday": "🍾 Samstag: Alles was ihr esst und trinkt, geht auf uns.",
     "flights": "✈️ Da die Hochzeit zeitgleich mit dem Oktoberfest stattfindet, bucht eure Anreise rechtzeitig!",
     "presents": "🎁 Bitte fühlt euch nicht verpflichtet, zusätzlich noch etwas zu schenken. Eure Anwesenheit ist mehr als genug für uns! 🫶"

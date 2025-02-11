@@ -18,7 +18,7 @@ export const Location = ({ dict }: { dict: Dictionary }) => (
           rel="noopener noreferrer"
           className="text-[#4A4238] text-lg hover:underline flex items-center"
         >
-          Am Machinenring, 86633 Neuburg an der Donau
+          Am Maschinenring, 86633 Neuburg an der Donau
           <FaExternalLinkAlt className="ml-2 text-sm" />
         </Link>
       </div>
