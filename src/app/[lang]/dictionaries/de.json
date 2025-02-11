@@ -31,7 +31,10 @@
     }
   },
   "travelInfo": {
-    "title": "Anreise"
+    "title": "Anreise",
+    "bielefeld": "Die einfachste und schnellste Anreise ist mit dem Auto. Es gibt kostenloses Parken am Hotel.",
+    "finland": "Die einfachste und schnellste Anreise ist mit dem Flugzeug nach MUC (zurzeit ca. 250e pro Person) und dann mit einem Mietauto (ca. 100e für 2 Tage) nach Neuburg. Es gibt kostenloses Parken am Hotel.",
+    "munich": "Die einfachste und schnellste Anreise ist mit dem Auto oder dem Zug nach Neuburg. Es gibt kostenloses Parken am Hotel. Wir können dich mit anderen Gästen, die von München nach Neuburg fahren, zusammenfahren. Kontaktiere uns, falls du Interesse daran hast."
   },
   "budget": {
     "title": "Budget",
