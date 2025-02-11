@@ -22,7 +22,7 @@ export const Program = ({ dict }: { dict: Dictionary }) => {
     {
       fullDate: dict.weekdays.Sunday,
       events: [
-        { time: "09:00", description: dict.program.brunch },
+        { time: "07:30", description: dict.program.brunch },
         { time: "11:00", description: dict.program.checkout },
       ],
     },
