@@ -20,7 +20,7 @@
   },
   "accommodation": {
     "title": "Übernachtung",
-    "price": "Wir haben ein Kontingent für alle Gäste im Acker Hotel direkt neben der Location der Feier für einen Preis von 144€ pro Nacht für ein Doppelzimmer inklusive Fruhstück vorgemerkt. Ihr müsstet nur euer eigenes Zimmer selbst reservieren.",
+    "price": "Wir haben ein Kontingent für alle Gäste im Acker Hotel direkt neben der Location der Feier für einen Preis von 144€ pro Nacht für ein Doppelzimmer inklusive Frühstück vorgemerkt. Ihr müsstet nur euer eigenes Zimmer selbst reservieren.",
     "cancel": "Die Reservierung kann bis zu zwei Wochen vor der Feier kostenlos storniert werden.",
     "book": "Zimmer per Email reservieren",
     "contact": "Du kannst das Hotel auch direkt telefonisch kontaktieren: ",
@@ -33,8 +33,8 @@
   "travelInfo": {
     "title": "Anreise",
     "bielefeld": "Die einfachste und schnellste Anreise ist mit dem Auto. Es gibt kostenloses Parken am Hotel.",
-    "finland": "Die einfachste und schnellste Anreise ist mit dem Flugzeug nach MUC (zurzeit ca. 250e pro Person) und dann mit einem Mietauto (ca. 100e für 2 Tage) nach Neuburg. Es gibt kostenloses Parken am Hotel.",
-    "munich": "Die einfachste und schnellste Anreise ist mit dem Auto oder dem Zug nach Neuburg. Es gibt kostenloses Parken am Hotel. Wir können dich mit anderen Gästen, die von München nach Neuburg fahren, zusammenfahren. Kontaktiere uns, falls du Interesse daran hast."
+    "finland": "Die einfachste und schnellste Anreise ist mit dem Flugzeug nach MUC und dann mit einem Mietwagen nach Neuburg. Es gibt kostenloses Parken am Hotel.",
+    "munich": "Die einfachste und schnellste Anreise ist mit dem Auto oder dem Zug nach Neuburg. Es gibt kostenloses Parken am Hotel. Wir koordinieren gerne Mitfahrgelegenheiten. Falls du daran Interesse hast, gebe uns kurz Bescheid."
   },
   "budget": {
     "title": "Budget",
@@ -92,11 +92,11 @@
     "questions": [
       {
         "question": "Was ist der Dresscode?",
-        "answer": "Es gibt keinen festen Dresscode - hauptsache du fühlst dich wohl. Freitag gerne in Tracht, falls vorhanden. Samstag dann eher festlich und schick."
+        "answer": "Es gibt keinen festen Dresscode - hauptsache du fühlst dich wohl. Freitag gerne in Tracht, falls vorhanden. Samstag festlich und schick."
       },
       {
         "question": "Gibt es Zeit für Aufführungen / Reden?",
-        "answer": "Ja, bitte kontaktiere unsere TrauzeugInnen, wenn du eine Performance oder einen Vortrag halten möchtest."
+        "answer": "Ja, bitte kontaktiere unsere TrauzeugInnen, wenn du eine Performance oder eine Rede halten möchtest."
       },
       {
         "question": "Was wünscht ihr euch als Geschenk?",
