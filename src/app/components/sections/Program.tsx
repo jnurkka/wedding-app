@@ -9,20 +9,20 @@ export const Program = ({ dict }: { dict: Dictionary }) => {
       fullDate: dict.weekdays.Friday,
       events: [
         { time: "15:00", description: dict.program.checkin },
-        { time: "18:00", description: dict.program.party },
+        { time: "18:00 - 23:00", description: dict.program.party },
       ],
     },
     {
       fullDate: dict.weekdays.Saturday,
       events: [
-        { time: "13:00", description: dict.program.wedding },
-        { time: "02:00", description: dict.program.lightsout },
+        { time: "07:30 - 11:00", description: dict.program.brunch },
+        { time: "13:30 - 02:00", description: dict.program.wedding },
       ],
     },
     {
       fullDate: dict.weekdays.Sunday,
       events: [
-        { time: "07:30", description: dict.program.brunch },
+        { time: "07:30 - 11:00", description: dict.program.brunch },
         { time: "11:00", description: dict.program.checkout },
       ],
     },
