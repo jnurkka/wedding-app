@@ -19,7 +19,7 @@ export const Accommodation = ({ dict }: { dict: Dictionary }) => {
           <p>{dict.accommodation.cancel}</p>
           <div className="flex justify-center space-x-4 mt-6">
             <a
-              href={`mailto:rezeption@dasacker.de?cc=jaakko+wedding@nurkka.me&subject=${dict.accommodation.reservation.subject}&body=${dict.accommodation.reservation.body}`}
+              href={`mailto:rezeption@dasacker.de?subject=${dict.accommodation.reservation.subject}&body=${dict.accommodation.reservation.body}`}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transition-colors"
             >
               {dict.accommodation.book}
