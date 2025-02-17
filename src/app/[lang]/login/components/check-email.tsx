@@ -1,6 +1,6 @@
 import { Dictionary } from "../../types";
 
-export const CheckEmailComponent = ({ dict }: { dict: Dictionary }) => {
+export const CheckEmailComponent = ({ dict, type }: { dict: Dictionary; type: 'registration' | 'login' }) => {
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">
       <div className="bg-white py-8 px-4 shadow rounded-md sm:px-10 text-center">
@@ -21,7 +21,7 @@ export const CheckEmailComponent = ({ dict }: { dict: Dictionary }) => {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           {dict.login.check_email_title}
         </h2>
-        <p className="text-gray-600 mb-6">{dict.login.check_email_message}</p>
+        <p className="text-gray-600 mb-6">{type === 'login' ? dict.login.check_email_message_login : dict.login.check_email_message_register}</p>
         <p className="text-sm text-gray-500">
           {dict.login.check_email_message_2}
         </p>

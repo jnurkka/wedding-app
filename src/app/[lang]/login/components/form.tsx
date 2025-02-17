@@ -32,7 +32,6 @@ export const LoginFormComponent = ({
           : undefined;
       const status = await submit(email, password);
       if (status === "success") {
-        setAskForPassword(false);
         setEmailSent(true);
       } else if (status === "signups-not-allowed") {
         setAskForPassword(true);
@@ -50,7 +49,7 @@ export const LoginFormComponent = ({
     }
   };
   if (emailSent) {
-    return <CheckEmailComponent dict={dict} />;
+    return <CheckEmailComponent dict={dict} type={askForPassword ? 'registration' : 'login'} />;
   }
   return (
     <div className="sm:mx-auto sm:w-full sm:max-w-md">
