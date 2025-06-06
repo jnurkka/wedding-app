@@ -46,9 +46,11 @@ export async function updateSession(request: NextRequest) {
     !request.nextUrl.pathname.includes("/error") &&
     !request.nextUrl.pathname.includes("/register")
   ) {
-    // no user, potentially respond by redirecting the user to the login page
+    // Extract lang from the path (e.g. /en/guests -> en)
+    const match = request.nextUrl.pathname.match(/^\/(\w{2})(\/|$)/);
+    const lang = match ? match[1] : "en";
     const url = request.nextUrl.clone();
-    url.pathname += "/login";
+    url.pathname = `/${lang}/login`;
     return NextResponse.redirect(url);
   }
 
