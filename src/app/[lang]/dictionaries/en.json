@@ -139,5 +139,9 @@
         ]
       }
     ]
+  },
+  "landing": {
+    "countdown": "{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds",
+    "countdownDone": "It's wedding time!"
   }
 }

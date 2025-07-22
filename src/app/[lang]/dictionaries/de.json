@@ -139,5 +139,9 @@
         ]
       }
     ]
+  },
+  "landing": {
+    "countdown": "{{days}} Tage, {{hours}} Stunden, {{minutes}} Minuten und {{seconds}} Sekunden",
+    "countdownDone": "Es ist Zeit zu feiern!"
   }
 }

@@ -139,5 +139,9 @@
         ]
       }
     ]
+  },
+  "landing": {
+    "countdown": "{{days}} päivää, {{hours}} tuntia, {{minutes}} minuuttia ja {{seconds}} sekuntia",
+    "countdownDone": "Nyt juhlitaan!"
   }
 }

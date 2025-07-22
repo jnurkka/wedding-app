@@ -45,7 +45,7 @@ export const SaveTheDate = ({
       <NavigationDots sections={sectionIds} />
       <LanguageSelector lang={lang} />
       <div className="snap-y snap-mandatory h-screen w-screen overflow-y-scroll relative">
-        <Landing start="19.09." end="21.09.2025" />
+        <Landing start="19.09." end="21.09.2025" dict={dict} />
         <Program dict={dict} />
         <Location dict={dict} />
         <Accommodation dict={dict} />
