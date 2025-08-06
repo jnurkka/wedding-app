@@ -81,7 +81,8 @@
     "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox.",
     "password_info": "Deine Email ist noch nicht registriert. Bitte gib das Passwort ein, das wir dir mitgeteilt haben, um dich zu registrieren.",
     "password": "Passwort",
-    "wrong_password": "Falsches Passwort. Bitte versuche es erneut oder frage uns nochmal danach."
+    "wrong_password": "Falsches Passwort. Bitte versuche es erneut oder frage uns nochmal danach.",
+    "back": "Zurück"
   },
   "register": {
     "title": "Email bestätigt!",

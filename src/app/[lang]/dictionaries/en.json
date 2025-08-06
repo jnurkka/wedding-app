@@ -81,7 +81,8 @@
     "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder.",
     "password_info": "Your email is not yet registered. Please enter the password we shared with you to register.",
     "password": "Password",
-    "wrong_password": "Wrong password. Please try again or ask us for the password."
+    "wrong_password": "Wrong password. Please try again or ask us for the password.",
+    "back": "Back"
   },
   "register": {
     "title": "Email verified!",

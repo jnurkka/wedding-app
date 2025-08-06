@@ -81,7 +81,8 @@
     "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä, tarkista myös roskapostikansio.",
     "password_info": "Sähköpostiosoite ei ole vielä rekisteröity. Syötä salasana jonka sait meiltä rekisteröityäksesi.",
     "password": "Salasana",
-    "wrong_password": "Väärä salasana. Yritä uudelleen tai pyydä meiltä salasanaa."
+    "wrong_password": "Väärä salasana. Yritä uudelleen tai pyydä meiltä salasanaa.",
+    "back": "Takaisin"
   },
   "register": {
     "title": "Sähköpostiosoite vahvistettu!",
