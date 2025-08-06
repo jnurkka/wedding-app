@@ -181,6 +181,15 @@
   },
   "landing": {
     "countdown": "{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds",
-    "countdownDone": "It's wedding time!"
+    "countdownDone": "It's wedding time!",
+    "greeting": "Hi!",
+    "greetingPersonal": "Hi {{name}}!",
+    "statusLabel": "Your status:",
+    "status": {
+      "no_registration": "📝 Please register",
+      "no_menu_order": "🥘 Submit your menu order",
+      "complete": "✅ All set"
+    },
+    "rsvpButton": "To the RSVP"
   }
 }

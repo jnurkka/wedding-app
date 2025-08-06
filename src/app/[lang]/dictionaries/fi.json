@@ -181,6 +181,15 @@
   },
   "landing": {
     "countdown": "{{days}} päivää, {{hours}} tuntia, {{minutes}} minuuttia ja {{seconds}} sekuntia",
-    "countdownDone": "Nyt juhlitaan!"
+    "countdownDone": "Nyt juhlitaan!",
+    "greeting": "Hei!",
+    "greetingPersonal": "Hei {{name}}!",
+    "statusLabel": "Statuksesi:",
+    "status": {
+      "no_registration": "📝 Rekisteröidy",
+      "no_menu_order": "🥘 Valitse ruokavalio",
+      "complete": "✅ Kaikki kunnossa"
+    },
+    "rsvpButton": "RSVP:hen"
   }
 }

@@ -181,6 +181,15 @@
   },
   "landing": {
     "countdown": "{{days}} Tage, {{hours}} Stunden, {{minutes}} Minuten und {{seconds}} Sekunden",
-    "countdownDone": "Es ist Zeit zu feiern!"
+    "countdownDone": "Es ist Zeit zu feiern!",
+    "greeting": "Hallo!",
+    "greetingPersonal": "Hallo {{name}}!",
+    "statusLabel": "Dein Status:",
+    "status": {
+      "no_registration": "📝 Registrieren",
+      "no_menu_order": "🥘 Essensbestellung abgeben",
+      "complete": "✅ Alles erledigt"
+    },
+    "rsvpButton": "Zur Anmeldung"
   }
 }
