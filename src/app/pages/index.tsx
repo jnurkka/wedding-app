@@ -7,6 +7,7 @@ import { Location } from "../components/sections/Location";
 import { Program } from "../components/sections/Program";
 import { Response } from "../components/sections/Response";
 import { TravelInfo } from "../components/sections/TravelInfo";
+import { MenuInfo } from "../components/sections/MenuInfo";
 import { Registration } from "../data";
 import { NavigationDots } from "../components/NavigationDots";
 import { Dictionary } from "../[lang]/types";
@@ -35,6 +36,7 @@ export const SaveTheDate = ({
     "accommodation",
     "travel-info",
     "budget",
+    "menu-info",
     "response",
     "faq",
     "contact",
@@ -51,6 +53,7 @@ export const SaveTheDate = ({
         <Accommodation dict={dict} />
         <TravelInfo dict={dict} />
         <Budget dict={dict} />
+        <MenuInfo dict={dict} />
         <Response
           registration={registration}
           submitRegistration={submitRegistration}

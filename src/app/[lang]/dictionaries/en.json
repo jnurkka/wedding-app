@@ -50,10 +50,10 @@
     "email": "Your email",
     "created_at": "Response saved at",
     "name": "Your name",
-    "people_friday": "Number of people (Friday)",
-    "people_saturday": "Number of people (Saturday)",
-    "hotel_friday": "Staying in Acker Hotel (Friday)",
-    "hotel_saturday": "Staying in Acker Hotel (Saturday)",
+    "people_friday": "Friday",
+    "people_saturday": "Saturday",
+    "hotel_friday": "Friday",
+    "hotel_saturday": "Saturday",
     "diet": "Dietary restrictions",
     "diet_placeholder": "For example allergies, intolerances, vegan, vegetarian",
     "comment": "Additional comments",
@@ -61,7 +61,13 @@
     "submit": "Submit response",
     "update": "Update response",
     "submitting": "Saving...",
-    "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly."
+    "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly.",
+    "menu_selection": "Menu Selection",
+    "menu_selection_description": "Please select the menu preferences for each participant attending Saturday.",
+    "participant": "Participant",
+    "participant_name_placeholder": "Participant name",
+    "number_of_people": "Number of people",
+    "staying_in_hotel": "Staying in Acker Hotel"
   },
   "error": {
     "title": "Oops! Something Went Wrong",
@@ -140,6 +146,36 @@
         ]
       }
     ]
+  },
+  "menu": {
+    "title": "Menu Selection",
+    "description": "Please let us know how many portions of each dish you would like to order for your group.",
+    "vorspeise": {
+      "title": "Appetizer",
+      "finnish_salmon_soup": "Finnish salmon soup",
+      "vegetarian_soup": "Vegetable soup"
+    },
+    "hauptspeise": {
+      "title": "Main Course",
+      "braised_beef": "Braised ox cheeks with port wine jus, dumpling and field vegetables",
+      "saibling_filet": "Trout filet with parmesan crust on white wine foam with pearl barley risotto and field vegetables",
+      "stuffed_schlutzkrapfen": "Seasonally stuffed Tyrolean ravioli on sour pumpkin ragout topped with cottage cheese, walnuts and caramel"
+    },
+    "dessert": {
+      "title": "Dessert Buffet",
+      "kaiserschmarrn": "Kaiserschmarrn with plum compote and apple ragout with raisins and almonds",
+      "tiramisu": "Tiramisu",
+      "chocolate_mousse": "Dark chocolate mousse with berries"
+    },
+    "form": {
+      "finnish_salmon_soup": "Finnish salmon soup",
+      "vegetarian_soup": "Vegetarian soup",
+      "braised_beef": "Braised ox cheeks",
+      "saibling_filet": "Saibling filet",
+      "stuffed_schlutzkrapfen": "Stuffed Tyrolean ravioli",
+      "submit": "Save menu selection",
+      "success": "Your menu selection has been saved successfully!"
+    }
   },
   "landing": {
     "countdown": "{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds",

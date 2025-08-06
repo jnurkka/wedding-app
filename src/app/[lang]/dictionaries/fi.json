@@ -50,10 +50,10 @@
     "email": "Sähköpostiosoite",
     "created_at": "Viimeksi tallennettu",
     "name": "Nimi",
-    "people_friday": "Henkilömäärä (Perjantai)",
-    "people_saturday": "Henkilömäärä (Lauantai)",
-    "hotel_friday": "Majoitumme Acker Hotelissa (Perjantai)",
-    "hotel_saturday": "Majoitumme Acker Hotelissa (Lauantai)",
+    "people_friday": "Perjantai",
+    "people_saturday": "Lauantai",
+    "hotel_friday": "Perjantai",
+    "hotel_saturday": "Lauantai",
     "diet": "Ruokavaliorajoitteet",
     "diet_placeholder": "Allergiat, Vegaaninen, Vegetaarinen, jne.",
     "comment": "Kommentit",
@@ -61,7 +61,13 @@
     "submit": "Tallenna ilmoittautuminen",
     "update": "Päivitä ilmoittautuminen",
     "submitting": "Tallennetaan...",
-    "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin."
+    "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin.",
+    "menu_selection": "Ruokavalinnat",
+    "menu_selection_description": "Valitse ruokailutoiveet jokaiselle lauantaina osallistuvalle henkilölle.",
+    "participant": "Osallistuja",
+    "participant_name_placeholder": "Osallistujan nimi",
+    "number_of_people": "Henkilömäärä",
+    "staying_in_hotel": "Majoittuminen Acker Hotellissa"
   },
   "error": {
     "title": "Ups! Jotain meni pieleen",
@@ -140,6 +146,36 @@
         ]
       }
     ]
+  },
+  "menu": {
+    "title": "Menun valinta",
+    "description": "Kertokaa meille, kuinka monta annosta kustakin ruoasta haluatte tilata ryhmällenne.",
+    "vorspeise": {
+      "title": "Alkuruoka",
+      "finnish_salmon_soup": "Suomalainen lohikeitto",
+      "vegetarian_soup": "Kasviskeitto"
+    },
+    "hauptspeise": {
+      "title": "Pääruoka",
+      "braised_beef": "Haudutettua häränposkea portviinikastikeella, knöödeli ja peltokasvikset",
+      "saibling_filet": "Nieriäfilee parmesaanikuorella valkoviinivaahdon, helmiohrarisoton ja peltokasvisten kera",
+      "stuffed_schlutzkrapfen": "Kausitäytetyt tirolilaiset pastataskut happamalla kurpitsaragoulla, päällä tuorejuustoa, saksanpähkinää ja karamellia"
+    },
+    "dessert": {
+      "title": "Jälkiruokabuffet",
+      "kaiserschmarrn": "Kaiserschmarrn (Itävaltalainen pannukakku) luumusoseen, omenaraguun sekä rusinoiden ja manteleiden kera",
+      "tiramisu": "Tiramisu",
+      "chocolate_mousse": "Tumma suklaamousse marjojen kanssa"
+    },
+    "form": {
+      "finnish_salmon_soup": "Suomalainen lohikeitto",
+      "vegetarian_soup": "Kasviskeitto",
+      "braised_beef": "Haudutettua häränposkea",
+      "saibling_filet": "Nieriäfilee",
+      "stuffed_schlutzkrapfen": "Täytetyt tirolilaiset pastataskut",
+      "submit": "Tallenna valinta",
+      "success": "Valintanne on tallennettu onnistuneesti!"
+    }
   },
   "landing": {
     "countdown": "{{days}} päivää, {{hours}} tuntia, {{minutes}} minuuttia ja {{seconds}} sekuntia",

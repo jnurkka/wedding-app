@@ -7,4 +7,12 @@ export interface Registration {
   diet: string;
   comment: string;
   created_at?: string;
+  // Individual menu selections for each participant
+  menu_selections?: {
+    [participantIndex: number]: {
+      name?: string;
+      appetizer?: string;
+      main?: string;
+    };
+  };
 }

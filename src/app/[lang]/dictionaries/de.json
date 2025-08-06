@@ -50,10 +50,10 @@
     "email": "Deine Email",
     "created_at": "Zuletzt gespeichert",
     "name": "Dein Name",
-    "people_friday": "Anzahl Personen (Freitag)",
-    "people_saturday": "Anzahl Personen (Samstag)",
-    "hotel_friday": "Übernachtung im Acker Hotel (Freitag)",
-    "hotel_saturday": "Übernachtung im Acker Hotel (Samstag)",
+    "people_friday": "Freitag",
+    "people_saturday": "Samstag",
+    "hotel_friday": "Freitag",
+    "hotel_saturday": "Samstag",
     "diet": "Ernährungseinschränkungen",
     "diet_placeholder": "Allergien, Unverträglichkeiten, Vegan, Vegetarisch, etc.",
     "comment": "Kommentare",
@@ -61,7 +61,13 @@
     "submit": "Anmeldung speichern",
     "update": "Anmeldung aktualisieren",
     "submitting": "Speichern...",
-    "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt"
+    "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt",
+    "menu_selection": "Menüauswahl",
+    "menu_selection_description": "Bitte wählt die Menüpräferenzen für jeden Teilnehmer aus, der am Samstag teilnimmt.",
+    "participant": "Teilnehmer",
+    "participant_name_placeholder": "Name des Teilnehmers",
+    "number_of_people": "Anzahl Personen",
+    "staying_in_hotel": "Übernachtung im Acker Hotel"
   },
   "error": {
     "title": "Oops! Etwas ist schief gelaufen",
@@ -140,6 +146,36 @@
         ]
       }
     ]
+  },
+  "menu": {
+    "title": "Menüauswahl",
+    "description": "Bitte teilt uns mit, wie viele Portionen von jedem Gericht ihr für eure Gruppe bestellen möchtet.",
+    "vorspeise": {
+      "title": "Vorspeise",
+      "finnish_salmon_soup": "Finnische Lachssuppe",
+      "vegetarian_soup": "Gemüsesuppe"
+    },
+    "hauptspeise": {
+      "title": "Hauptspeise",
+      "braised_beef": "Geschmorte Ochsenbacken mit Portwein-Jus dazu Serviettenknödel und Ackergemüse",
+      "saibling_filet": "Saiblingsfilet mit Parmesankruste auf Weißweinschaum mit Perlgraupenrisotto und Ackergemüse",
+      "stuffed_schlutzkrapfen": "Saisonal gefüllte Schlutzkrapfen auf saurem Kürbisragout getoppt mit Hüttenkäse, Walnuss und Karamell"
+    },
+    "dessert": {
+      "title": "Dessertbuffet",
+      "kaiserschmarrn": "Kaiserschmarrn mit Zwetschgenröster und Apfelragout mit Rosinen und Mandeln",
+      "tiramisu": "Tiramisu",
+      "chocolate_mousse": "Dunkle Schokoladenmousse mit Beeren"
+    },
+    "form": {
+      "finnish_salmon_soup": "Finnische Lachssuppe",
+      "vegetarian_soup": "Vegetarische Suppe",
+      "braised_beef": "Geschmorte Ochsenbacken",
+      "saibling_filet": "Sablingsfilet",
+      "stuffed_schlutzkrapfen": "Gefüllte Schlutzkrapfen",
+      "submit": "Menüauswahl speichern",
+      "success": "Eure Menüauswahl wurde erfolgreich gespeichert!"
+    }
   },
   "landing": {
     "countdown": "{{days}} Tage, {{hours}} Stunden, {{minutes}} Minuten und {{seconds}} Sekunden",
