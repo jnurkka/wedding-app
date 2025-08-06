@@ -84,6 +84,9 @@ export const LoginFormComponent = ({
                 <p className="text-sm text-gray-500 mb-2">
                   {dict.login.password_info}
                 </p>
+                <p className="text-sm text-blue-600 mb-2">
+                  {dict.login.forgot_email_help}
+                </p>
                 <input
                   id="password"
                   name="password"

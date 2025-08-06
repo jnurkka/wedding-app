@@ -87,6 +87,7 @@
     "check_email_message_register": "Lahetimme sinulle linkin sähköpostiosoitteeseesi, jolla voit vahvistaa rekisteröitymisesi. Klikkaa linkkiä vahvistaaksesi sähköpostiosoitteesi. Kun olet vahvistanut sähköpostiosoitteesi, voit käyttää sitä sisäänkirjautumiseen ilman salasanaa.",
     "check_email_message_2": "Linkki on voimassa tunnin ajan. Jos et löydä viestiä, tarkista myös roskapostikansio.",
     "password_info": "Sähköpostiosoite ei ole vielä rekisteröity. Syötä salasana jonka sait meiltä rekisteröityäksesi.",
+    "forgot_email_help": "Jos et muista rekisteröinnissä käyttämääsi sähköpostiosoitetta, kirjoita meille niin autamme sinua!",
     "password": "Salasana",
     "wrong_password": "Väärä salasana. Yritä uudelleen tai pyydä meiltä salasanaa.",
     "back": "Takaisin"

@@ -87,6 +87,7 @@
     "check_email_message_register": "Wir haben dir einen Link per Email geschickt, damit du die Registrierung abschließen kannst. Klicke den Link im Email, um die Registrierung abzuschließen. Sobald deine Registrierung abgeschlossen ist, kannst du dich mit deiner Email von überall ohne Passwort einloggen.",
     "check_email_message_2": "Der Link ist eine Stunde gültig. Falls du das Email nicht findest, prüfe auch dein Spam/Junk-Mailbox.",
     "password_info": "Deine Email ist noch nicht registriert. Bitte gib das Passwort ein, das wir dir mitgeteilt haben, um dich zu registrieren.",
+    "forgot_email_help": "Falls du dich nicht an die E-Mail-Adresse erinnerst, die du bei der Registrierung verwendet hast, schreib uns und wir helfen dir!",
     "password": "Passwort",
     "wrong_password": "Falsches Passwort. Bitte versuche es erneut oder frage uns nochmal danach.",
     "back": "Zurück"

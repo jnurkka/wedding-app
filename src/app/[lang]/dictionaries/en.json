@@ -87,6 +87,7 @@
     "check_email_message_register": "We've sent a link to complete your registration to your email address. Click the link to finish the registration. Once you've completed the registration, you can use your email to login from anywhere without a password.",
     "check_email_message_2": "The link will expire in 1 hour. If you don't see the email, check your spam folder.",
     "password_info": "Your email is not yet registered. Please enter the password we shared with you to register.",
+    "forgot_email_help": "If you can't remember the email address you used for registration, please write us and we'll help you!",
     "password": "Password",
     "wrong_password": "Wrong password. Please try again or ask us for the password.",
     "back": "Back"
