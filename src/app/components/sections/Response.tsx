@@ -23,6 +23,13 @@ export const Response = ({
   const [submitMessage, setSubmitMessage] = useState("");
   const [peopleSat, setPeopleSat] = useState(registration?.people_sat || 0);
 
+  // Clear success message when form changes
+  const handleFormChange = () => {
+    if (submitMessage) {
+      setSubmitMessage("");
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const data = new FormData(e.target as HTMLFormElement);
@@ -177,13 +184,13 @@ export const Response = ({
       <SectionContainer id="response" bgColor="#E6D2C3">
         <SectionTitle value={dict.rsvp.title} />
         <Card>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} onChange={handleFormChange} className="space-y-6">
             <span className="block text-sm mb-2 text-center md:text-left">
               {`${dict.rsvp.email}: ${email}`}
             </span>
             {registration?.created_at && (
               <span className="block text-sm mb-2 text-center md:text-left">
-                {`${dict.rsvp.created_at}: ${new Date(registration.created_at).toLocaleDateString()}`}
+                {`${dict.rsvp.created_at}: ${new Date(registration.created_at).toLocaleDateString('de-DE')}`}
               </span>
             )}
             <div className="grid grid-cols-1 gap-4">
@@ -228,7 +235,10 @@ export const Response = ({
                       max="5"
                       name="people_sat"
                       defaultValue={registration?.people_sat}
-                      onChange={(e) => setPeopleSat(parseInt(e.target.value) || 0)}
+                      onChange={(e) => {
+                        setPeopleSat(parseInt(e.target.value) || 0);
+                        handleFormChange();
+                      }}
                       className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all"
                     />
                   </label>
