@@ -154,7 +154,7 @@
     "description": "Kertokaa meille, kuinka monta annosta kustakin ruoasta haluatte tilata ryhmällenne.",
     "vorspeise": {
       "title": "Alkuruoka",
-      "finnish_salmon_soup": "Suomalainen lohikeitto",
+      "finnish_salmon_soup": "Lohikeitto",
       "vegetarian_soup": "Kasviskeitto"
     },
     "hauptspeise": {
@@ -170,7 +170,7 @@
       "chocolate_mousse": "Tumma suklaamousse marjojen kanssa"
     },
     "form": {
-      "finnish_salmon_soup": "Suomalainen lohikeitto",
+      "finnish_salmon_soup": "Lohikeitto",
       "vegetarian_soup": "Kasviskeitto",
       "braised_beef": "Haudutettua häränposkea",
       "saibling_filet": "Nieriäfilee",
