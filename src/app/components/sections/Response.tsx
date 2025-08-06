@@ -94,7 +94,19 @@ export const Response = ({
           {dict.rsvp.menu_selection}
         </h3>
         <p className="text-sm text-stone-600 mb-4">
-          {dict.rsvp.menu_selection_description}
+          {dict.rsvp.menu_selection_description}{" "}
+          <button
+            type="button"
+            onClick={() => {
+              document.getElementById('menu-info')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
+            className="text-[#4A4238] underline hover:text-[#4A4238]/80 transition-colors cursor-pointer"
+          >
+            {dict.rsvp.menu_selection_link}
+          </button>
         </p>
         {Array.from({ length: peopleSat }, (_, i) => (
           <div key={i} className="bg-[#E6D2C3] p-4 rounded-lg space-y-3">

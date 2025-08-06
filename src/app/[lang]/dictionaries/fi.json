@@ -64,6 +64,7 @@
     "success": "Ilmoittautumisesi on tallennettu! Voit tarkistaa ja muokata sitä milloin vain täällä. Jos joudut peruuttamaan ilmoittautumisesi, otathan suoraan yhteyttä meihin.",
     "menu_selection": "Ruokavalinnat",
     "menu_selection_description": "Valitse ruokailutoiveet jokaiselle lauantaina osallistuvalle henkilölle.",
+    "menu_selection_link": "Katso menun yksityiskohdat yllä olevasta osiosta.",
     "participant": "Osallistuja",
     "participant_name_placeholder": "Osallistujan nimi",
     "number_of_people": "Henkilömäärä",

@@ -64,6 +64,7 @@
     "success": "Deine Anmeldung wurde erfolgreich gespeichert! Du kannst sie jederzeit hier aktualisieren. Wenn du Absagen musst, bitte kontaktiere uns direkt",
     "menu_selection": "Menüauswahl",
     "menu_selection_description": "Bitte wählt die Menüpräferenzen für jeden Teilnehmer aus, der am Samstag teilnimmt.",
+    "menu_selection_link": "Siehe die Menüdetails oben für weitere Informationen.",
     "participant": "Teilnehmer",
     "participant_name_placeholder": "Name des Teilnehmers",
     "number_of_people": "Anzahl Personen",

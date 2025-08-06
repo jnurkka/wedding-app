@@ -64,6 +64,7 @@
     "success": "Your response has been saved successfully! You can come back here to update it anytime. If you need to cancel your registration, please contact us directly.",
     "menu_selection": "Menu Selection",
     "menu_selection_description": "Please select the menu preferences for each participant attending Saturday.",
+    "menu_selection_link": "See the menu details above for more information.",
     "participant": "Participant",
     "participant_name_placeholder": "Participant name",
     "number_of_people": "Number of people",
