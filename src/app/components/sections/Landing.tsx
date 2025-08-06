@@ -51,6 +51,11 @@ export const Landing: React.FC<{
       return dict.landing.status.no_registration;
     }
 
+    // If no participants for Saturday, show complete status
+    if (registration.people_sat === 0) {
+      return dict.landing.status.complete;
+    }
+
     const hasMenuSelections = registration.menu_selections &&
       Object.keys(registration.menu_selections).length > 0;
 
