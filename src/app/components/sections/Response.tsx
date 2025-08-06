@@ -40,6 +40,24 @@ export const Response = ({
     try {
       const people_sat = parseInt((data.get("people_sat") as string) || "0", 10);
 
+      // Validate menu selections for each participant
+      for (let i = 0; i < people_sat; i++) {
+        const appetizer = data.get(`participant_${i}_appetizer`) as string;
+        const main = data.get(`participant_${i}_main`) as string;
+
+        if (!appetizer || appetizer === "") {
+          setSubmitMessage(`Please select an appetizer for participant ${i + 1}`);
+          setIsSubmitting(false);
+          return;
+        }
+
+        if (!main || main === "") {
+          setSubmitMessage(`Please select a main course for participant ${i + 1}`);
+          setIsSubmitting(false);
+          return;
+        }
+      }
+
       // Collect menu selections for each participant
       const menu_selections: { [participantIndex: number]: { name?: string; appetizer?: string; main?: string } } = {};
       for (let i = 0; i < people_sat; i++) {
@@ -142,6 +160,7 @@ export const Response = ({
                   name={`participant_${i}_appetizer`}
                   defaultValue={registration?.menu_selections?.[i]?.appetizer || ""}
                   className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all text-sm"
+                  required
                 >
                   {appetizerOptions.map(option => (
                     <option key={option.value} value={option.value}>
@@ -158,6 +177,7 @@ export const Response = ({
                   name={`participant_${i}_main`}
                   defaultValue={registration?.menu_selections?.[i]?.main || ""}
                   className="w-full px-3 py-2 bg-white border border-[#4A4238] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#4A4238]/50 transition-all text-sm"
+                  required
                 >
                   {mainOptions.map(option => (
                     <option key={option.value} value={option.value}>
