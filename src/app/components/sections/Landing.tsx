@@ -89,7 +89,7 @@ export const Landing: React.FC<{
     >
       <Overlay />
       <div className="absolute inset-0 flex items-center justify-center px-4 py-8">
-        <div className="w-full max-w-4xl max-h-screen flex flex-col justify-between mt-12 max-sm:mt-8" style={{ height: 'min(85vh, 750px)' }}>
+        <div className="w-full max-w-4xl max-h-screen flex flex-col justify-between mt-12 max-sm:mt-8" style={{ height: 'min(70vh, 750px)' }}>
           {/* Top Section - Title, Date, Countdown */}
           <div className="flex flex-col items-center text-center">
             <h1 className="font-['Great_Vibes'] text-8xl mb-4 text-white drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)] max-sm:text-5xl">
