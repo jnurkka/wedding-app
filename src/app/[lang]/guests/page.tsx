@@ -4,10 +4,14 @@ import { getDictionary, Lang } from "../dictionaries";
 
 export default async function GuestListPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ lang: Lang }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const lang = (await params).lang;
+  const sp = await searchParams;
+  const filter = (typeof sp?.food === 'string' ? sp.food : Array.isArray(sp?.food) ? sp.food[0] : undefined) ?? 'all';
   const dict = await getDictionary(lang);
   const supabase = await createClient();
 
@@ -17,11 +21,18 @@ export default async function GuestListPage({
     redirect("/login");
   }
 
-  // Fetch all registrations
-  const { data: registrations, error: regError } = await supabase
+  // Fetch registrations with optional food order filter
+  let query = supabase
     .from("registrations")
-    .select("name, people_fr, people_sat, user_id, created_at, has_food_order")
-    .order("created_at", { ascending: true });
+    .select("name, people_fr, people_sat, user_id, created_at, has_food_order");
+
+  if (filter === 'missing') {
+    query = query.eq('has_food_order', false);
+  } else if (filter === 'done') {
+    query = query.eq('has_food_order', true);
+  }
+
+  const { data: registrations, error: regError } = await query.order("created_at", { ascending: true });
 
   if (regError) {
     return <div>Error loading guest list.</div>;
@@ -89,6 +100,11 @@ export default async function GuestListPage({
       `}</style>
       <div className="guest-list-card">
         <div className="guest-list-title">{dict.rsvp.title} - Guest List</div>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 8, marginBottom: '1rem' }}>
+          <a href="?food=all" style={{ padding: '6px 10px', borderRadius: 8, textDecoration: 'none', border: '1px solid #e5e7eb', background: filter === 'all' ? '#e5e7eb' : '#fff', color: '#111827' }}>All</a>
+          <a href="?food=missing" style={{ padding: '6px 10px', borderRadius: 8, textDecoration: 'none', border: '1px solid #e5e7eb', background: filter === 'missing' ? '#e5e7eb' : '#fff', color: '#111827' }}>Missing order</a>
+          <a href="?food=done" style={{ padding: '6px 10px', borderRadius: 8, textDecoration: 'none', border: '1px solid #e5e7eb', background: filter === 'done' ? '#e5e7eb' : '#fff', color: '#111827' }}>Has order</a>
+        </div>
         <table className="guest-list-table">
           <thead>
             <tr>
