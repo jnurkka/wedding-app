@@ -20,7 +20,7 @@ export default async function GuestListPage({
   // Fetch all registrations
   const { data: registrations, error: regError } = await supabase
     .from("registrations")
-    .select("name, people_fr, people_sat, user_id, created_at")
+    .select("name, people_fr, people_sat, user_id, created_at, has_food_order")
     .order("created_at", { ascending: true });
 
   if (regError) {
@@ -96,6 +96,7 @@ export default async function GuestListPage({
               <th>{dict.rsvp.people_friday}</th>
               <th>{dict.rsvp.people_saturday}</th>
               <th>{dict.rsvp.title}</th>
+              <th>Food order</th>
             </tr>
           </thead>
           <tbody>
@@ -106,6 +107,7 @@ export default async function GuestListPage({
                   <td>{reg.people_fr}</td>
                   <td>{reg.people_sat}</td>
                   <td>{new Date(reg.created_at).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' })}</td>
+                  <td>{reg.has_food_order ? '✅' : '—'}</td>
                 </tr>
               ))
             ) : (

@@ -103,6 +103,7 @@ export type Database = {
           comment: string | null
           created_at: string
           diet: string | null
+          has_food_order: boolean
           id: number
           name: string
           people_fr: number
@@ -115,6 +116,7 @@ export type Database = {
           comment?: string | null
           created_at?: string
           diet?: string | null
+          has_food_order?: boolean
           id?: number
           name: string
           people_fr?: number
@@ -127,6 +129,7 @@ export type Database = {
           comment?: string | null
           created_at?: string
           diet?: string | null
+          has_food_order?: boolean
           id?: number
           name?: string
           people_fr?: number
